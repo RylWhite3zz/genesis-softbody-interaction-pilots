@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "sample_id": "stage3_100k_qwen2_v1_solid_053842",
+  "stage": "genesis_mpm_drop",
+  "status": "pass",
+  "state_after": "simulation_preview_done",
+  "failure_type": null,
+  "warnings": [],
+  "inputs": {
+    "mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_solid_053842/mesh/stage3_100k_qwen2_v1_solid_053842.glb",
+    "mesh_quality_report": null,
+    "sample_metadata": {
+      "object_type": "Chiffon Cake",
+      "geometry_family": "solid",
+      "material_family": "soft_food",
+      "tags": null
+    }
+  },
+  "outputs": {
+    "preview_gif": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_solid_053842/validation/genesis_mpm_drop/preview.gif",
+    "normalized_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_solid_053842/validation/genesis_mpm_drop/input_mesh.obj",
+    "visual_mesh": null,
+    "frames_dir": null
+  },
+  "metrics": {
+    "steps": 420,
+    "record_every": 4,
+    "fps": 18,
+    "dt": 0.0007,
+    "substeps": 28,
+    "backend": "gpu",
+    "particle_size": 0.007,
+    "grid_density": 144.0,
+    "mesh": {
+      "source_mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_solid_053842/mesh/stage3_100k_qwen2_v1_solid_053842.glb",
+      "normalized_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_solid_053842/validation/genesis_mpm_drop/input_mesh.obj",
+      "input_vertices": 306388,
+      "input_faces": 461570,
+      "export_vertices": 3645,
+      "export_faces": 7290,
+      "alpha_vertices": 3645,
+      "alpha_faces": 7290,
+      "largest_component_only": false,
+      "proxy_mode": "alpha-wrap",
+      "proxy_used": "alpha_wrap",
+      "max_faces": 20000,
+      "simplified": false,
+      "scale_applied": 0.3212924976710418,
+      "bounds": [
+        [
+          -0.1607862828202228,
+          -0.1614953981244436,
+          -0.0018528095255514
+        ],
+        [
+          0.1614257545357861,
+          0.1616599084009206,
+          0.1145238589539545
+        ]
+      ],
+      "extent": [
+        0.3222120373560089,
+        0.32315530652536417,
+        0.11637666847950591
+      ],
+      "watertight": true,
+      "alpha_fraction": 0.02,
+      "offset_fraction": 0.004,
+      "has_vertex_color": true,
+      "source_texture_baked": true,
+      "color_transfer": true,
+      "color_transfer_upperbound": 1.0,
+      "source_bundle_files": [
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_solid_053842/validation/genesis_mpm_drop/alpha_wrap_work/source.obj",
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_solid_053842/validation/genesis_mpm_drop/alpha_wrap_work/material_0.png",
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_solid_053842/validation/genesis_mpm_drop/alpha_wrap_work/source.mtl"
+      ],
+      "warnings": [],
+      "orientation": {
+        "orientation_preset": "largest-face-down",
+        "initial_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "applied": [
+          {
+            "mode": "largest_face_down",
+            "bbox_extent_before": [
+              0.9945134818553925,
+              0.35065242648124695,
+              0.9959771931171417
+            ],
+            "shortest_axis_before": "y",
+            "euler_deg": [
+              90.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      "volume": 0.0011055513909530603,
+      "thickness_ratio": 0.36012612551782935,
+      "estimated_particles": 3223
+    },
+    "visual": {
+      "mode": "proxy",
+      "attached": false
+    },
+    "gif_generated": true
+  },
+  "config": {
+    "material": "MPM.Elastic",
+    "solver": "mpm",
+    "material_preset": {
+      "youngs_modulus": 65000.0,
+      "poisson_ratio": 0.36,
+      "density": 600.0,
+      "particle_size": 0.007,
+      "grid_density": 144.0,
+      "dt": 0.0007,
+      "substeps": 28,
+      "drop_height": 0.4,
+      "description": "very soft food-like solid",
+      "name": "soft_food",
+      "material_family": "soft_food",
+      "geometry_family": "solid",
+      "alpha_wrap_fraction": 0.02,
+      "alpha_wrap_offset_fraction": 0.004,
+      "source": "manifest_physical_properties"
+    },
+    "material_preset_mode": "auto",
+    "youngs_modulus": 65000.0,
+    "poisson_ratio": 0.36,
+    "density": 600.0,
+    "sampler": "pbs-32",
+    "asset_size": 0.32,
+    "drop_height": 0.4,
+    "vis_mode": "visual",
+    "proxy_mode": "alpha-wrap",
+    "visual_source": "proxy",
+    "orientation_preset": "largest-face-down",
+    "initial_euler": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "renderer": "rasterizer",
+    "render_preset": "studio",
+    "render_spp": 256,
+    "raytracer_depth": 48,
+    "raytracer_state_limit": 67108864,
+    "render_support_neighbors": 18,
+    "camera_pos": [
+      1.05,
+      -1.35,
+      0.95
+    ],
+    "camera_lookat": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "fov": 35.0
+  },
+  "error": null,
+  "runtime_sec": 326.542
+}

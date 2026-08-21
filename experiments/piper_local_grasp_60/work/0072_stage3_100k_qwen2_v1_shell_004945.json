@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "implementation_revision": "local_edge_corner_v6_deferred_place_ik",
+  "asset": {
+    "asset_id": "0072_stage3_100k_qwen2_v1_shell_004945",
+    "object_type": "Positioning Cushion",
+    "canonical_id": "cushion_shell__positioning_cushion",
+    "geometry_family": "shell",
+    "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0072_stage3_100k_qwen2_v1_shell_004945/collision/collision.obj",
+    "extent_m": [
+      0.22197737275716828,
+      0.322399584637193,
+      0.1721481119588694
+    ],
+    "mass_kg": 0.13184700893090262,
+    "youngs_modulus_pa": 50000.0,
+    "poisson_ratio": 0.28,
+    "density_kg_m3": 180.0,
+    "particle_size_m": 0.009,
+    "grid_density_per_m": 128.0,
+    "source_dt_s": 0.0008,
+    "source_substeps": 24,
+    "estimated_particles": 1005,
+    "source_solver": "genesis_mpm_elastic"
+  },
+  "scale": 1.0,
+  "spawn_position_m": [
+    0.4700100824081187,
+    -0.23501737982753967,
+    0.060239615340118895
+  ],
+  "settled": {
+    "com_m": [
+      0.4736887402753078,
+      -0.24078132476268418,
+      0.07231960870595629
+    ],
+    "aabb_min_m": [
+      0.32537516951560974,
+      -0.41673561930656433,
+      0.05947580933570862
+    ],
+    "aabb_max_m": [
+      0.6211321353912354,
+      -0.0543702207505703,
+      0.09265994280576706
+    ],
+    "speed_rms_m_s": 0.012624438523982142,
+    "speed_max_m_s": 0.048272370142175385,
+    "active_count": 938,
+    "finite": true
+  },
+  "candidate_count": 2,
+  "candidate_trials": [
+    {
+      "candidate": {
+        "grasp_center_m": [
+          0.35326610905217937,
+          -0.10259714749741364,
+          0.08005
+        ],
+        "close_axis": "xy_45deg",
+        "close_axis_unit_xy": [
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "tangent_axis_unit_xy": [
+          0.7071067811865476,
+          -0.7071067811865475
+        ],
+        "wrist_yaw_deg": -45.0,
+        "local_width_m": 0.046485555732082795,
+        "commanded_close_width_m": 0.023985555732082796,
+        "requires_entry_compression": false,
+        "entry_interference_m": 0.0,
+        "patch_particle_count": 10,
+        "low_surface_support_count": 4,
+        "high_surface_support_count": 5,
+        "patch_tangent_center_m": 0.322344,
+        "patch_z_center_m": 0.08005,
+        "grasp_type": "edge",
+        "edge_fraction": 1.0,
+        "corner_fraction": 0.0631958242745356,
+        "score": 12.48562244327811,
+        "rank": 0
+      },
+      "motion_plan": {
+        "grasp_wrist_yaw_deg": -45.0
+      },
+      "ik": {
+        "approach": {
+          "target_grip_center_m": [
+            0.35326610905217937,
+            -0.10259714749741364,
+            0.15505
+          ],
+          "arm_q_rad": [
+            0.1332060545682907,
+            1.752928614616394,
+            -0.5679451823234558,
+            1.0285992622375488,
+            -1.166641116142273,
+            -0.4047580659389496
+          ],
+          "position_error_norm_m": 0.0003197504161806452,
+          "rotation_error_norm_rad": 7.924895786223122e-05
+        },
+        "descend": {
+          "target_grip_center_m": [
+            0.35326610905217937,
+            -0.10259714749741364,
+            0.08005
+          ],
+          "arm_q_rad": [
+            0.1403501033782959,
+            2.070554494857788,
+            -0.5363136529922485,
+            0.9430176019668579,
+            -1.221730351448059,
+            -0.10104527324438095
+          ],
+          "position_error_norm_m": 0.03292991788970043,
+          "rotation_error_norm_rad": 0.14117764179306821
+        },
+        "probe_lift": {
+          "target_grip_center_m": [
+            0.35326610905217937,
+            -0.10259714749741364,
+            0.30005
+          ],
+          "arm_q_rad": [
+            0.13204066455364227,
+            1.38363516330719,
+            -0.8739097714424133,
+            1.4131892919540405,
+            -0.9219300150871277,
+            -1.140654444694519
+          ],
+          "position_error_norm_m": 0.00039439755042688934,
+          "rotation_error_norm_rad": 0.00015880100550391365
+        }
+      },
+      "grasp_ik_valid": false,
+      "place_ik_valid": null,
+      "phase_end": [],
+      "probe": null,
+      "assessment": null,
+      "elapsed_seconds": 4.841797603294253,
+      "status": "failed_grasp_ik"
+    },
+    {
+      "candidate": {
+        "grasp_center_m": [
+          0.36178670578385796,
+          -0.40571642167185346,
+          0.076
+        ],
+        "close_axis": "xy_135deg",
+        "close_axis_unit_xy": [
+          -0.7071067811865475,
+          0.7071067811865476
+        ],
+        "tangent_axis_unit_xy": [
+          0.7071067811865476,
+          0.7071067811865475
+        ],
+        "wrist_yaw_deg": 45.0,
+        "local_width_m": 0.033064898079796845,
+        "commanded_close_width_m": 0.012,
+        "requires_entry_compression": false,
+        "entry_interference_m": 0.0,
+        "patch_particle_count": 12,
+        "low_surface_support_count": 3,
+        "high_surface_support_count": 8,
+        "patch_tangent_center_m": -0.031063,
+        "patch_z_center_m": 0.076,
+        "grasp_type": "edge",
+        "edge_fraction": 0.9849903081156579,
+        "corner_fraction": 0.21792199373573276,
+        "score": 8.521257568134317,
+        "rank": 1
+      },
+      "motion_plan": {
+        "grasp_wrist_yaw_deg": 45.0
+      },
+      "ik": {
+        "approach": {
+          "target_grip_center_m": [
+            0.36178670578385796,
+            -0.40571642167185346,
+            0.151
+          ],
+          "arm_q_rad": [
+            -1.3123599290847778,
+            2.8611230850219727,
+            -2.766174793243408,
+            1.4434435367584229,
+            1.221730351448059,
+            -1.6831687688827515
+          ],
+          "position_error_norm_m": 0.16668099857357604,
+          "rotation_error_norm_rad": 0.8705950471834742
+        },
+        "descend": {
+          "target_grip_center_m": [
+            0.36178670578385796,
+            -0.40571642167185346,
+            0.076
+          ],
+          "arm_q_rad": [
+            -1.3011609315872192,
+            2.989145278930664,
+            -2.7684807777404785,
+            1.3953274488449097,
+            1.221730351448059,
+            -1.7830064296722412
+          ],
+          "position_error_norm_m": 0.16002045621649827,
+          "rotation_error_norm_rad": 0.8359716035139716
+        },
+        "probe_lift": {
+          "target_grip_center_m": [
+            0.36178670578385796,
+            -0.40571642167185346,
+            0.296
+          ],
+          "arm_q_rad": [
+            1.8227028846740723,
+            0.13442440330982208,
+            -2.765026330947876,
+            -1.4564452171325684,
+            1.221730351448059,
+            -1.0858221054077148
+          ],
+          "position_error_norm_m": 0.1439019787314896,
+          "rotation_error_norm_rad": 0.8919986277027596
+        }
+      },
+      "grasp_ik_valid": false,
+      "place_ik_valid": null,
+      "phase_end": [],
+      "probe": null,
+      "assessment": null,
+      "elapsed_seconds": 1.852306330576539,
+      "status": "failed_grasp_ik"
+    }
+  ],
+  "runtime": {
+    "backend": "backend.cuda",
+    "genesis_module": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/envs/genesis/lib/python3.10/site-packages/genesis/__init__.py",
+    "genesis_version": "1.1.2",
+    "cuda_device": "NVIDIA A800 80GB PCIe",
+    "write_isolation": {
+      "installed_source_read_only": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/envs/genesis/lib/python3.10/site-packages/genesis",
+      "runtime_source": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/piper_local_grasp_60/.cache/runs/0072_stage3_100k_qwen2_v1_shell_004945/genesis_runtime",
+      "pbs_binary": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/piper_local_grasp_60/.cache/runs/0072_stage3_100k_qwen2_v1_shell_004945/genesis_runtime/ext/VolumeSampling",
+      "temporary_directory": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/piper_local_grasp_60/.cache/runs/0072_stage3_100k_qwen2_v1_shell_004945/tmp"
+    },
+    "pad_center_calibration": {
+      "four_home_pad_centers_m": [
+        [
+          0.5063181519508362,
+          -0.03549995645880699,
+          0.36433160305023193
+        ],
+        [
+          0.47658801078796387,
+          -0.03549996018409729,
+          0.36834654211997986
+        ],
+        [
+          0.5063181519508362,
+          0.035500042140483856,
+          0.36433160305023193
+        ],
+        [
+          0.47658801078796387,
+          0.03550003468990326,
+          0.36834654211997986
+        ]
+      ],
+      "two_far_home_pad_centers_m": [
+        [
+          0.47658801078796387,
+          -0.03549996018409729,
+          0.36834654211997986
+        ],
+        [
+          0.47658801078796387,
+          0.03550003468990326,
+          0.36834654211997986
+        ]
+      ],
+      "calibrated_home_grip_center_m": [
+        0.47658801078796387,
+        3.725290298461914e-08,
+        0.36834654211997986
+      ],
+      "legacy_approximate_home_grip_center_m": [
+        0.4765879444,
+        0.0,
+        0.368346624
+      ],
+      "legacy_calibration_error_m": 1.1180106540182021e-07
+    }
+  },
+  "protocol": {
+    "dt_s": 0.0008,
+    "substeps": 24,
+    "stage_steps": {
+      "settle_clear": 437,
+      "approach": 350,
+      "descend": 475,
+      "close": 562,
+      "grip_hold": 225,
+      "probe_lift": 875,
+      "probe_hold": 300,
+      "transfer": 1312,
+      "lower_into_tray": 812,
+      "open": 437,
+      "retreat": 562,
+      "settle_in_tray": 812
+    },
+    "local_grasp_only": true,
+    "original_scale_only": true,
+    "robot_mpm_coupling_friction": 6.0,
+    "trajectory_recording": false,
+    "failed_video_retention": false
+  },
+  "video": null,
+  "status": "failed_grasp_ik_all",
+  "reason": "no candidate completed pick-place; candidate terminal statuses: ['failed_grasp_ik', 'failed_grasp_ik']",
+  "build_seconds": 39.56632707454264,
+  "torch_peak_allocated_bytes": 472064,
+  "torch_peak_reserved_bytes": 2097152,
+  "elapsed_seconds": 80.83984631299973
+}

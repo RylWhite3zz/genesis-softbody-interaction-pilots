@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "sample_id": "stage3_100k_qwen2_v1_cloth_sheet_038839",
+  "stage": "genesis_mpm_drop",
+  "status": "pass",
+  "state_after": "simulation_preview_done",
+  "failure_type": null,
+  "warnings": [
+    "thin_proxy: thickness_ratio=0.050; MPM volume preview may not preserve thin-shell shape"
+  ],
+  "inputs": {
+    "mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_cloth_sheet_038839/mesh/stage3_100k_qwen2_v1_cloth_sheet_038839.glb",
+    "mesh_quality_report": null,
+    "sample_metadata": {
+      "object_type": "Tarpaulin",
+      "geometry_family": "cloth_sheet",
+      "material_family": "textile",
+      "tags": null
+    }
+  },
+  "outputs": {
+    "preview_gif": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_cloth_sheet_038839/validation/genesis_mpm_drop/preview.gif",
+    "normalized_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_cloth_sheet_038839/validation/genesis_mpm_drop/input_mesh.obj",
+    "visual_mesh": null,
+    "frames_dir": null
+  },
+  "metrics": {
+    "steps": 420,
+    "record_every": 4,
+    "fps": 18,
+    "dt": 0.0006,
+    "substeps": 32,
+    "backend": "gpu",
+    "particle_size": 0.004,
+    "grid_density": 192.0,
+    "mesh": {
+      "source_mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_cloth_sheet_038839/mesh/stage3_100k_qwen2_v1_cloth_sheet_038839.glb",
+      "normalized_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_cloth_sheet_038839/validation/genesis_mpm_drop/input_mesh.obj",
+      "input_vertices": 2793,
+      "input_faces": 5376,
+      "export_vertices": 780,
+      "export_faces": 1556,
+      "alpha_vertices": 780,
+      "alpha_faces": 1556,
+      "largest_component_only": false,
+      "proxy_mode": "alpha-wrap",
+      "proxy_used": "alpha_wrap",
+      "max_faces": 20000,
+      "simplified": false,
+      "scale_applied": 0.21773241365705964,
+      "bounds": [
+        [
+          -0.1646090216555138,
+          -0.1112825350298592,
+          -0.0045881308990318
+        ],
+        [
+          0.164552036107422,
+          0.111282471649812,
+          0.0117524318273026
+        ]
+      ],
+      "extent": [
+        0.3291610577629358,
+        0.22256500667967122,
+        0.0163405627263344
+      ],
+      "watertight": true,
+      "alpha_fraction": 0.03,
+      "offset_fraction": 0.012,
+      "has_vertex_color": true,
+      "source_texture_baked": true,
+      "color_transfer": true,
+      "color_transfer_upperbound": 1.0,
+      "source_bundle_files": [
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_cloth_sheet_038839/validation/genesis_mpm_drop/alpha_wrap_work/source.obj",
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_cloth_sheet_038839/validation/genesis_mpm_drop/alpha_wrap_work/material_0.png",
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_cloth_sheet_038839/validation/genesis_mpm_drop/alpha_wrap_work/source.mtl"
+      ],
+      "warnings": [],
+      "orientation": {
+        "orientation_preset": "largest-face-down",
+        "initial_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "applied": [
+          {
+            "mode": "largest_face_down",
+            "bbox_extent_before": [
+              1.469693899154663,
+              0.9797958731651306,
+              0.03300000075250864
+            ],
+            "shortest_axis_before": "z",
+            "euler_deg": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      "volume": 0.0006391302396576403,
+      "thickness_ratio": 0.04964306178072556,
+      "estimated_particles": 9986
+    },
+    "visual": {
+      "mode": "proxy",
+      "attached": false
+    },
+    "gif_generated": true
+  },
+  "config": {
+    "material": "MPM.Elastic",
+    "solver": "mpm",
+    "material_preset": {
+      "youngs_modulus": 120000.0,
+      "poisson_ratio": 0.34,
+      "density": 460.0,
+      "particle_size": 0.004,
+      "grid_density": 192.0,
+      "dt": 0.0006,
+      "substeps": 32,
+      "drop_height": 0.3,
+      "alpha_wrap_fraction": 0.03,
+      "alpha_wrap_offset_fraction": 0.012,
+      "description": "textile visual mesh approximated as soft volume",
+      "name": "textile",
+      "material_family": "textile",
+      "geometry_family": "cloth_sheet",
+      "source": "manifest_physical_properties"
+    },
+    "material_preset_mode": "auto",
+    "youngs_modulus": 120000.0,
+    "poisson_ratio": 0.34,
+    "density": 460.0,
+    "sampler": "pbs-32",
+    "asset_size": 0.32,
+    "drop_height": 0.3,
+    "vis_mode": "visual",
+    "proxy_mode": "alpha-wrap",
+    "visual_source": "proxy",
+    "orientation_preset": "largest-face-down",
+    "initial_euler": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "renderer": "rasterizer",
+    "render_preset": "studio",
+    "render_spp": 256,
+    "raytracer_depth": 48,
+    "raytracer_state_limit": 67108864,
+    "render_support_neighbors": 18,
+    "camera_pos": [
+      1.05,
+      -1.35,
+      0.95
+    ],
+    "camera_lookat": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "fov": 35.0
+  },
+  "error": null,
+  "runtime_sec": 431.985
+}

@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "sample_id": "stage3_100k_qwen2_v1_shell_025403",
+  "stage": "genesis_mpm_drop",
+  "status": "pass",
+  "state_after": "simulation_preview_done",
+  "failure_type": null,
+  "warnings": [],
+  "inputs": {
+    "mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_025403/mesh/stage3_100k_qwen2_v1_shell_025403.glb",
+    "mesh_quality_report": null,
+    "sample_metadata": {
+      "object_type": "Inflatable Mattress",
+      "geometry_family": "shell",
+      "material_family": "unknown",
+      "tags": null
+    }
+  },
+  "outputs": {
+    "preview_gif": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_025403/validation/genesis_mpm_drop/preview.gif",
+    "normalized_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_025403/validation/genesis_mpm_drop/input_mesh.obj",
+    "visual_mesh": null,
+    "frames_dir": null
+  },
+  "metrics": {
+    "steps": 420,
+    "record_every": 4,
+    "fps": 18,
+    "dt": 0.001,
+    "substeps": 20,
+    "backend": "gpu",
+    "particle_size": 0.008,
+    "grid_density": 144.0,
+    "mesh": {
+      "source_mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_025403/mesh/stage3_100k_qwen2_v1_shell_025403.glb",
+      "normalized_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_025403/validation/genesis_mpm_drop/input_mesh.obj",
+      "input_vertices": 324264,
+      "input_faces": 488488,
+      "export_vertices": 1286,
+      "export_faces": 2568,
+      "alpha_vertices": 1286,
+      "alpha_faces": 2568,
+      "largest_component_only": false,
+      "proxy_mode": "alpha-wrap",
+      "proxy_used": "alpha_wrap",
+      "max_faces": 20000,
+      "simplified": false,
+      "scale_applied": 0.3195885804795505,
+      "bounds": [
+        [
+          -0.0786922862862675,
+          -0.1614100969083485,
+          -0.0012849952782133
+        ],
+        [
+          0.0786343721094786,
+          0.160957822802195,
+          0.0523727875093458
+        ]
+      ],
+      "extent": [
+        0.1573266583957461,
+        0.3223679197105435,
+        0.053657782787559095
+      ],
+      "watertight": true,
+      "alpha_fraction": 0.022,
+      "offset_fraction": 0.004,
+      "has_vertex_color": true,
+      "source_texture_baked": true,
+      "color_transfer": true,
+      "color_transfer_upperbound": 1.0,
+      "source_bundle_files": [
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_025403/validation/genesis_mpm_drop/alpha_wrap_work/source.obj",
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_025403/validation/genesis_mpm_drop/alpha_wrap_work/material_0.png",
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_025403/validation/genesis_mpm_drop/alpha_wrap_work/source.mtl"
+      ],
+      "warnings": [],
+      "orientation": {
+        "orientation_preset": "largest-face-down",
+        "initial_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "applied": [
+          {
+            "mode": "largest_face_down",
+            "bbox_extent_before": [
+              0.48382964730262756,
+              0.15939462184906006,
+              1.0012873411178589
+            ],
+            "shortest_axis_before": "y",
+            "euler_deg": [
+              90.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      "volume": 0.001269188843153251,
+      "thickness_ratio": 0.16644889117918063,
+      "estimated_particles": 2479
+    },
+    "visual": {
+      "mode": "proxy",
+      "attached": false
+    },
+    "gif_generated": true
+  },
+  "config": {
+    "material": "MPM.Elastic",
+    "solver": "mpm",
+    "material_preset": {
+      "youngs_modulus": 74340.0,
+      "poisson_ratio": 0.4,
+      "density": 533.0,
+      "particle_size": 0.008,
+      "grid_density": 144.0,
+      "dt": 0.001,
+      "substeps": 20,
+      "drop_height": 0.52,
+      "alpha_wrap_offset_fraction": 0.004,
+      "description": "flexible plastic shell/packaging",
+      "name": "plastic",
+      "material_family": "unknown",
+      "geometry_family": "shell",
+      "alpha_wrap_fraction": 0.022,
+      "source": "manifest_physical_properties"
+    },
+    "material_preset_mode": "auto",
+    "youngs_modulus": 74340.0,
+    "poisson_ratio": 0.4,
+    "density": 533.0,
+    "sampler": "pbs-32",
+    "asset_size": 0.32,
+    "drop_height": 0.52,
+    "vis_mode": "visual",
+    "proxy_mode": "alpha-wrap",
+    "visual_source": "proxy",
+    "orientation_preset": "largest-face-down",
+    "initial_euler": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "renderer": "rasterizer",
+    "render_preset": "studio",
+    "render_spp": 256,
+    "raytracer_depth": 48,
+    "raytracer_state_limit": 67108864,
+    "render_support_neighbors": 18,
+    "camera_pos": [
+      1.05,
+      -1.35,
+      0.95
+    ],
+    "camera_lookat": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "fov": 35.0
+  },
+  "error": null,
+  "runtime_sec": 194.381
+}

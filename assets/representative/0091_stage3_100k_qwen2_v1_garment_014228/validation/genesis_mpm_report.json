@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "sample_id": "stage3_100k_qwen2_v1_garment_014228",
+  "stage": "genesis_mpm_drop",
+  "status": "pass",
+  "state_after": "simulation_preview_done",
+  "failure_type": null,
+  "warnings": [],
+  "inputs": {
+    "mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_garment_014228/mesh/stage3_100k_qwen2_v1_garment_014228.glb",
+    "mesh_quality_report": null,
+    "sample_metadata": {
+      "object_type": "Medical Glove",
+      "geometry_family": "garment",
+      "material_family": "unknown",
+      "tags": null
+    }
+  },
+  "outputs": {
+    "preview_gif": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_garment_014228/validation/genesis_mpm_drop/preview.gif",
+    "normalized_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_garment_014228/validation/genesis_mpm_drop/input_mesh.obj",
+    "visual_mesh": null,
+    "frames_dir": null
+  },
+  "metrics": {
+    "steps": 420,
+    "record_every": 4,
+    "fps": 18,
+    "dt": 0.0008,
+    "substeps": 24,
+    "backend": "gpu",
+    "particle_size": 0.006,
+    "grid_density": 160.0,
+    "mesh": {
+      "source_mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_garment_014228/mesh/stage3_100k_qwen2_v1_garment_014228.glb",
+      "normalized_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_garment_014228/validation/genesis_mpm_drop/input_mesh.obj",
+      "input_vertices": 317389,
+      "input_faces": 481005,
+      "export_vertices": 900,
+      "export_faces": 1796,
+      "alpha_vertices": 900,
+      "alpha_faces": 1796,
+      "largest_component_only": false,
+      "proxy_mode": "alpha-wrap",
+      "proxy_used": "alpha_wrap",
+      "max_faces": 20000,
+      "simplified": false,
+      "scale_applied": 0.31947671769843383,
+      "bounds": [
+        [
+          -0.0834327352078921,
+          -0.1619860302400851,
+          -0.0017673689528254
+        ],
+        [
+          0.0834100074047193,
+          0.1621726562994559,
+          0.1113829558151719
+        ]
+      ],
+      "extent": [
+        0.1668427426126114,
+        0.324158686539541,
+        0.11315032476799729
+      ],
+      "watertight": true,
+      "alpha_fraction": 0.025,
+      "offset_fraction": 0.006,
+      "has_vertex_color": true,
+      "source_texture_baked": true,
+      "color_transfer": true,
+      "color_transfer_upperbound": 1.0,
+      "source_bundle_files": [
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_garment_014228/validation/genesis_mpm_drop/alpha_wrap_work/source.obj",
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_garment_014228/validation/genesis_mpm_drop/alpha_wrap_work/material_0.png",
+        "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_garment_014228/validation/genesis_mpm_drop/alpha_wrap_work/source.mtl"
+      ],
+      "warnings": [],
+      "orientation": {
+        "orientation_preset": "largest-face-down",
+        "initial_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "applied": [
+          {
+            "mode": "largest_face_down",
+            "bbox_extent_before": [
+              0.5082789957523346,
+              0.343666136264801,
+              1.0016379356384277
+            ],
+            "shortest_axis_before": "y",
+            "euler_deg": [
+              90.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      "volume": 0.0016852556405212377,
+      "thickness_ratio": 0.34905843793945396,
+      "estimated_particles": 7802
+    },
+    "visual": {
+      "mode": "proxy",
+      "attached": false
+    },
+    "gif_generated": true
+  },
+  "config": {
+    "material": "MPM.Elastic",
+    "solver": "mpm",
+    "material_preset": {
+      "youngs_modulus": 120000.0,
+      "poisson_ratio": 0.46,
+      "density": 950.0,
+      "particle_size": 0.006,
+      "grid_density": 160.0,
+      "dt": 0.0008,
+      "substeps": 24,
+      "drop_height": 0.36,
+      "alpha_wrap_fraction": 0.025,
+      "alpha_wrap_offset_fraction": 0.006,
+      "description": "textile visual mesh approximated as soft volume",
+      "name": "rubber",
+      "material_family": "unknown",
+      "geometry_family": "garment",
+      "source": "manifest_physical_properties"
+    },
+    "material_preset_mode": "auto",
+    "youngs_modulus": 120000.0,
+    "poisson_ratio": 0.46,
+    "density": 950.0,
+    "sampler": "pbs-32",
+    "asset_size": 0.32,
+    "drop_height": 0.36,
+    "vis_mode": "visual",
+    "proxy_mode": "alpha-wrap",
+    "visual_source": "proxy",
+    "orientation_preset": "largest-face-down",
+    "initial_euler": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "renderer": "rasterizer",
+    "render_preset": "studio",
+    "render_spp": 256,
+    "raytracer_depth": 48,
+    "raytracer_state_limit": 67108864,
+    "render_support_neighbors": 18,
+    "camera_pos": [
+      1.05,
+      -1.35,
+      0.95
+    ],
+    "camera_lookat": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "fov": 35.0
+  },
+  "error": null,
+  "runtime_sec": 474.289
+}

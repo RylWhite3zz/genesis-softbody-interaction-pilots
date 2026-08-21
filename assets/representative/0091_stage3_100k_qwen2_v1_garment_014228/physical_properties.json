@@ -1,0 +1,48 @@
+{
+  "mpm": {
+    "alpha_wrap_fraction": 0.025,
+    "alpha_wrap_offset_fraction": 0.006,
+    "density": 950.0,
+    "drop_height": 0.36,
+    "dt": 0.0008,
+    "grid_density": 160.0,
+    "particle_size": 0.006,
+    "poisson_ratio": 0.46,
+    "substeps": 24,
+    "youngs_modulus": 120000.0
+  },
+  "profile": "rubber",
+  "rationale": "base:rubber; geometry:garment; thin_latex_glove",
+  "schema_version": 1,
+  "solver": "genesis_mpm_elastic",
+  "tuning_rules": [
+    "base:rubber",
+    "geometry:garment",
+    "thin_latex_glove"
+  ],
+  "urdf": {
+    "center": [
+      -1.1363901586403102e-05,
+      9.331302968540456e-05,
+      0.05480779343117325
+    ],
+    "density": 950.0,
+    "extents": [
+      0.1668427426126114,
+      0.324158686539541,
+      0.11315032476799729
+    ],
+    "inertia": {
+      "ixx": 0.015727333340240263,
+      "ixy": 0.0,
+      "ixz": 0.0,
+      "iyy": 0.005421962006813135,
+      "iyz": 0.0,
+      "izz": 0.017733044487802954
+    },
+    "mass": 1.6009928584951758,
+    "raw_mass_from_density": 1.6009928584951758,
+    "volume": 0.0016852556405212377,
+    "watertight_collision": true
+  }
+}

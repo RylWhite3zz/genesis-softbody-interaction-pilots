@@ -1,0 +1,3177 @@
+{
+  "schema_version": 1,
+  "mode": "batch",
+  "scope": [
+    "solid",
+    "shell"
+  ],
+  "asset_count": 60,
+  "constraints": {
+    "original_scale_only": true,
+    "scale": 1.0,
+    "jaw_open_width_m": 0.066,
+    "wrong_size_policy": "skip without simulation",
+    "trajectory_recording": false,
+    "video_policy": "retain MP4 only when every success gate passes",
+    "robot_base_fixed": true,
+    "robot_reset": "open jaws centered 40% of object height above COM before the first physics step",
+    "robot_mpm_coupling_friction": 6.0,
+    "place_target": "rigid shallow tray on workbench"
+  },
+  "counts": {
+    "failed_gates": 1,
+    "skipped_post_settle_size": 1,
+    "skipped_size": 58
+  },
+  "attempted_count": 2,
+  "successful_video_count": 0,
+  "successful_videos": [],
+  "elapsed_seconds": 0.6117884758859873,
+  "assets": [
+    {
+      "asset": {
+        "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0001_stage3_100k_qwen2_v1_solid_053842",
+        "object_type": "Chiffon Cake",
+        "canonical_id": "baked_soft_food__chiffon_cake",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0001_stage3_100k_qwen2_v1_solid_053842/collision/collision.obj",
+        "extent_m": [
+          0.3222120373560089,
+          0.32315530652536417,
+          0.11637666847950591
+        ],
+        "youngs_modulus_pa": 65000.0,
+        "poisson_ratio": 0.36,
+        "density_kg_m3": 600.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 3223,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.116377 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.11637666847950591,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.116377 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0002_stage3_100k_qwen2_v1_solid_060156",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0002_stage3_100k_qwen2_v1_solid_060156",
+        "object_type": "Cupcake",
+        "canonical_id": "baked_soft_food__cupcake",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0002_stage3_100k_qwen2_v1_solid_060156/collision/collision.obj",
+        "extent_m": [
+          0.3235464893879915,
+          0.3227211432349209,
+          0.2452832576861203
+        ],
+        "youngs_modulus_pa": 65000.0,
+        "poisson_ratio": 0.36,
+        "density_kg_m3": 600.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 34218,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.245283 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2452832576861203,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.245283 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0003_stage3_100k_qwen2_v1_solid_029603",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0003_stage3_100k_qwen2_v1_solid_029603",
+        "object_type": "Dinner Roll",
+        "canonical_id": "baked_soft_food__dinner_roll",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0003_stage3_100k_qwen2_v1_solid_029603/collision/collision.obj",
+        "extent_m": [
+          0.2443787602099681,
+          0.3237123105414449,
+          0.2422118664223446
+        ],
+        "youngs_modulus_pa": 65000.0,
+        "poisson_ratio": 0.36,
+        "density_kg_m3": 600.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 40682,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.242212 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2422118664223446,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.242212 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0004_stage3_100k_qwen2_v1_solid_080046",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0004_stage3_100k_qwen2_v1_solid_080046",
+        "object_type": "Egg Tart",
+        "canonical_id": "baked_soft_food__egg_tart",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0004_stage3_100k_qwen2_v1_solid_080046/collision/collision.obj",
+        "extent_m": [
+          0.3232761046231331,
+          0.320491660758287,
+          0.1314836577394317
+        ],
+        "youngs_modulus_pa": 65000.0,
+        "poisson_ratio": 0.36,
+        "density_kg_m3": 600.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 3106,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.131484 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1314836577394317,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.131484 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0005_stage3_100k_qwen2_v1_solid_067443",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0005_stage3_100k_qwen2_v1_solid_067443",
+        "object_type": "Scone",
+        "canonical_id": "baked_soft_food__scone",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0005_stage3_100k_qwen2_v1_solid_067443/collision/collision.obj",
+        "extent_m": [
+          0.3238032795237139,
+          0.32288002508974556,
+          0.20221459893730048
+        ],
+        "youngs_modulus_pa": 65000.0,
+        "poisson_ratio": 0.36,
+        "density_kg_m3": 600.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 39527,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.202215 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.20221459893730048,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.202215 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0006_stage3_100k_qwen2_v1_solid_061625",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0006_stage3_100k_qwen2_v1_solid_061625",
+        "object_type": "Soft European Bread",
+        "canonical_id": "baked_soft_food__soft_european_bread",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0006_stage3_100k_qwen2_v1_solid_061625/collision/collision.obj",
+        "extent_m": [
+          0.323474890972294,
+          0.31604849343776553,
+          0.1549713766322191
+        ],
+        "youngs_modulus_pa": 65000.0,
+        "poisson_ratio": 0.36,
+        "density_kg_m3": 600.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 25179,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.154971 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1549713766322191,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.154971 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0007_stage3_100k_qwen2_v1_solid_018958",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0007_stage3_100k_qwen2_v1_solid_018958",
+        "object_type": "Blackberry",
+        "canonical_id": "compressible_fruit__blackberry",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0007_stage3_100k_qwen2_v1_solid_018958/collision/collision.obj",
+        "extent_m": [
+          0.30953037213969736,
+          0.324008635880046,
+          0.30154392728570706
+        ],
+        "youngs_modulus_pa": 70000.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 850.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 7034,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.301544 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.30154392728570706,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.301544 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0008_stage3_100k_qwen2_v1_solid_009748",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0008_stage3_100k_qwen2_v1_solid_009748",
+        "object_type": "Durian Flesh",
+        "canonical_id": "compressible_fruit__durian_flesh",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0008_stage3_100k_qwen2_v1_solid_009748/collision/collision.obj",
+        "extent_m": [
+          0.32311802404607237,
+          0.21911618800776111,
+          0.14316152387162528
+        ],
+        "youngs_modulus_pa": 70000.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 850.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 12978,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.143162 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.14316152387162528,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.143162 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0009_stage3_100k_qwen2_v1_solid_034002",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0009_stage3_100k_qwen2_v1_solid_034002",
+        "object_type": "Jujube",
+        "canonical_id": "compressible_fruit__jujube",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0009_stage3_100k_qwen2_v1_solid_034002/collision/collision.obj",
+        "extent_m": [
+          0.2610101305781401,
+          0.3237898867267045,
+          0.2540289780055334
+        ],
+        "youngs_modulus_pa": 70000.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 850.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 33992,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.254029 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2540289780055334,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.254029 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0010_stage3_100k_qwen2_v1_solid_065043",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0010_stage3_100k_qwen2_v1_solid_065043",
+        "object_type": "Kiwi",
+        "canonical_id": "compressible_fruit__kiwi",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0010_stage3_100k_qwen2_v1_solid_065043/collision/collision.obj",
+        "extent_m": [
+          0.1646603270899274,
+          0.3229526369003132,
+          0.152865666821243
+        ],
+        "youngs_modulus_pa": 70000.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 850.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 1557,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.152866 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.152865666821243,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.152866 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0011_stage3_100k_qwen2_v1_solid_087842",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0011_stage3_100k_qwen2_v1_solid_087842",
+        "object_type": "Mango",
+        "canonical_id": "compressible_fruit__mango",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0011_stage3_100k_qwen2_v1_solid_087842/collision/collision.obj",
+        "extent_m": [
+          0.32318189591927615,
+          0.1950739957700673,
+          0.1905937945978213
+        ],
+        "youngs_modulus_pa": 70000.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 850.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 18874,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.190594 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1905937945978213,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.190594 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0012_stage3_100k_qwen2_v1_solid_053458",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0012_stage3_100k_qwen2_v1_solid_053458",
+        "object_type": "Egg-crate Acoustic Foam",
+        "canonical_id": "foam_solid__egg_crate_acoustic_foam",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0012_stage3_100k_qwen2_v1_solid_053458/collision/collision.obj",
+        "extent_m": [
+          0.3219514935439182,
+          0.277970627476861,
+          0.0935152643610461
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 6033,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.093515 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.0935152643610461,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.093515 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0013_stage3_100k_qwen2_v1_solid_099540",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0013_stage3_100k_qwen2_v1_solid_099540",
+        "object_type": "Foam Earplug",
+        "canonical_id": "foam_solid__foam_earplug",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0013_stage3_100k_qwen2_v1_solid_099540/collision/collision.obj",
+        "extent_m": [
+          0.17433527145672328,
+          0.3222793806230696,
+          0.17198097886496672
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 703,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.171981 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.17198097886496672,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.171981 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0014_stage3_100k_qwen2_v1_solid_091790",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0014_stage3_100k_qwen2_v1_solid_091790",
+        "object_type": "Makeup Sponge",
+        "canonical_id": "foam_solid__makeup_sponge",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0014_stage3_100k_qwen2_v1_solid_091790/collision/collision.obj",
+        "extent_m": [
+          0.3232385356730057,
+          0.3228517495684302,
+          0.32054451010931473
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 22584,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.320545 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.32054451010931473,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.320545 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0015_stage3_100k_qwen2_v1_solid_001096",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0015_stage3_100k_qwen2_v1_solid_001096",
+        "object_type": "Melamine Foam Eraser",
+        "canonical_id": "foam_solid__melamine_foam_eraser",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0015_stage3_100k_qwen2_v1_solid_001096/collision/collision.obj",
+        "extent_m": [
+          0.1574933209868771,
+          0.3216592046774564,
+          0.1065332461824444
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 422,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.106533 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1065332461824444,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.106533 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0016_stage3_100k_qwen2_v1_solid_073362",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0016_stage3_100k_qwen2_v1_solid_073362",
+        "object_type": "Microphone Foam Cover",
+        "canonical_id": "foam_solid__microphone_foam_cover",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0016_stage3_100k_qwen2_v1_solid_073362/collision/collision.obj",
+        "extent_m": [
+          0.3020115780110315,
+          0.32298341455959945,
+          0.29654115403013936
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 26001,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.296541 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.29654115403013936,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.296541 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0017_stage3_100k_qwen2_v1_solid_023411",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0017_stage3_100k_qwen2_v1_solid_023411",
+        "object_type": "Sponge Paint Roller",
+        "canonical_id": "foam_solid__sponge_paint_roller",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0017_stage3_100k_qwen2_v1_solid_023411/collision/collision.obj",
+        "extent_m": [
+          0.2053229346197691,
+          0.3224036043141052,
+          0.1907388801485289
+        ],
+        "youngs_modulus_pa": 45000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 10163,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.190739 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1907388801485289,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.190739 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0018_stage3_100k_qwen2_v1_solid_069490",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0018_stage3_100k_qwen2_v1_solid_069490",
+        "object_type": "Beanbag Toy",
+        "canonical_id": "generic_deformable_solid__beanbag_toy",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0018_stage3_100k_qwen2_v1_solid_069490/collision/collision.obj",
+        "extent_m": [
+          0.3228354179904928,
+          0.3222696387716007,
+          0.247866444226656
+        ],
+        "youngs_modulus_pa": 72000.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 850.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 26411,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.247866 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.247866444226656,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.247866 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0019_stage3_100k_qwen2_v1_solid_092292",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0019_stage3_100k_qwen2_v1_solid_092292",
+        "object_type": "Heat Therapy Gel Pack",
+        "canonical_id": "generic_deformable_solid__heat_therapy_gel_pack",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0019_stage3_100k_qwen2_v1_solid_092292/collision/collision.obj",
+        "extent_m": [
+          0.32335637303082443,
+          0.3132433745610616,
+          0.15166644475520608
+        ],
+        "youngs_modulus_pa": 31500.0,
+        "poisson_ratio": 0.47,
+        "density_kg_m3": 1000.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 22676,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.151666 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.15166644475520608,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.151666 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0020_stage3_100k_qwen2_v1_solid_093750",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0020_stage3_100k_qwen2_v1_solid_093750",
+        "object_type": "Oxygen Mask Soft Seal",
+        "canonical_id": "generic_deformable_solid__oxygen_mask_soft_seal",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0020_stage3_100k_qwen2_v1_solid_093750/collision/collision.obj",
+        "extent_m": [
+          0.2648305026718797,
+          0.3220559194800415,
+          0.2149089076602064
+        ],
+        "youngs_modulus_pa": 80000.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 850.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 3159,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.214909 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2149089076602064,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.214909 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0021_stage3_100k_qwen2_v1_solid_013734",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0021_stage3_100k_qwen2_v1_solid_013734",
+        "object_type": "Soft Tissue Training Block",
+        "canonical_id": "generic_deformable_solid__soft_tissue_training_block",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0021_stage3_100k_qwen2_v1_solid_013734/collision/collision.obj",
+        "extent_m": [
+          0.3239797928929431,
+          0.3239548616285113,
+          0.2947362876854237
+        ],
+        "youngs_modulus_pa": 35000.0,
+        "poisson_ratio": 0.47,
+        "density_kg_m3": 1000.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 49388,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.294736 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2947362876854237,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.294736 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0022_stage3_100k_qwen2_v1_solid_031681",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0022_stage3_100k_qwen2_v1_solid_031681",
+        "object_type": "Stress Ball",
+        "canonical_id": "generic_deformable_solid__stress_ball",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0022_stage3_100k_qwen2_v1_solid_031681/collision/collision.obj",
+        "extent_m": [
+          0.32215242785945297,
+          0.3226634853159772,
+          0.2745607212759231
+        ],
+        "youngs_modulus_pa": 85000.0,
+        "poisson_ratio": 0.44,
+        "density_kg_m3": 720.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 28707,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.274561 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2745607212759231,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.274561 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0023_stage3_100k_qwen2_v1_solid_087532",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0023_stage3_100k_qwen2_v1_solid_087532",
+        "object_type": "Plush Toy",
+        "canonical_id": "plush_soft_solid__plush_toy",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0023_stage3_100k_qwen2_v1_solid_087532/collision/collision.obj",
+        "extent_m": [
+          0.2738127720213359,
+          0.32256816575720515,
+          0.2404835839826447
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 7995,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.240484 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2404835839826447,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.240484 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0024_stage3_100k_qwen2_v1_solid_025042",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0024_stage3_100k_qwen2_v1_solid_025042",
+        "object_type": "Protective Rubber Cover",
+        "canonical_id": "rubber_soft_solid__protective_rubber_cover",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0024_stage3_100k_qwen2_v1_solid_025042/collision/collision.obj",
+        "extent_m": [
+          0.22645563644696742,
+          0.3221336949333976,
+          0.2001818669934122
+        ],
+        "youngs_modulus_pa": 150000.0,
+        "poisson_ratio": 0.46,
+        "density_kg_m3": 1050.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 2338,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.200182 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2001818669934122,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.200182 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0025_stage3_100k_qwen2_v1_solid_014381",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0025_stage3_100k_qwen2_v1_solid_014381",
+        "object_type": "Silicone Teether Toy",
+        "canonical_id": "rubber_soft_solid__silicone_teether_toy",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0025_stage3_100k_qwen2_v1_solid_014381/collision/collision.obj",
+        "extent_m": [
+          0.3115890860455873,
+          0.3239162803435535,
+          0.3046441228153286
+        ],
+        "youngs_modulus_pa": 100000.0,
+        "poisson_ratio": 0.47,
+        "density_kg_m3": 1080.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 2522,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.304644 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.3046441228153286,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.304644 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0026_stage3_100k_qwen2_v1_solid_001836",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0026_stage3_100k_qwen2_v1_solid_001836",
+        "object_type": "Butter",
+        "canonical_id": "soft_food_form__butter",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0026_stage3_100k_qwen2_v1_solid_001836/collision/collision.obj",
+        "extent_m": [
+          0.3235186887189677,
+          0.2941044003251842,
+          0.1580934117302355
+        ],
+        "youngs_modulus_pa": 60000.0,
+        "poisson_ratio": 0.38,
+        "density_kg_m3": 720.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 22442,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.158093 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1580934117302355,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.158093 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0027_stage3_100k_qwen2_v1_solid_077504",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0027_stage3_100k_qwen2_v1_solid_077504",
+        "object_type": "Gummy Candy",
+        "canonical_id": "soft_food_form__gummy_candy",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0027_stage3_100k_qwen2_v1_solid_077504/collision/collision.obj",
+        "extent_m": [
+          0.20942566845867638,
+          0.32320905848247317,
+          0.1886054595693489
+        ],
+        "youngs_modulus_pa": 54000.0,
+        "poisson_ratio": 0.38,
+        "density_kg_m3": 720.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 15141,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.188605 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1886054595693489,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.188605 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0028_stage3_100k_qwen2_v1_solid_051802",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0028_stage3_100k_qwen2_v1_solid_051802",
+        "object_type": "Mashed Potato",
+        "canonical_id": "soft_food_form__mashed_potato",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0028_stage3_100k_qwen2_v1_solid_051802/collision/collision.obj",
+        "extent_m": [
+          0.318675953997742,
+          0.324023270152001,
+          0.26445043055522677
+        ],
+        "youngs_modulus_pa": 35000.0,
+        "poisson_ratio": 0.45,
+        "density_kg_m3": 1050.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 4450,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.264450 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.26445043055522677,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.264450 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0029_stage3_100k_qwen2_v1_solid_072660",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0029_stage3_100k_qwen2_v1_solid_072660",
+        "object_type": "Mochi",
+        "canonical_id": "soft_food_form__mochi",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0029_stage3_100k_qwen2_v1_solid_072660/collision/collision.obj",
+        "extent_m": [
+          0.3231350476587963,
+          0.32323670578645314,
+          0.1514130688828582
+        ],
+        "youngs_modulus_pa": 60000.0,
+        "poisson_ratio": 0.38,
+        "density_kg_m3": 720.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 25003,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.151413 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1514130688828582,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.151413 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0030_stage3_100k_qwen2_v1_solid_092067",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0030_stage3_100k_qwen2_v1_solid_092067",
+        "object_type": "Rice Ball",
+        "canonical_id": "soft_food_form__rice_ball",
+        "geometry_family": "solid",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0030_stage3_100k_qwen2_v1_solid_092067/collision/collision.obj",
+        "extent_m": [
+          0.3235014658577181,
+          0.2769559416081719,
+          0.151314538083791
+        ],
+        "youngs_modulus_pa": 60000.0,
+        "poisson_ratio": 0.38,
+        "density_kg_m3": 720.0,
+        "particle_size_m": 0.007,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.0007,
+        "source_substeps": 28,
+        "estimated_particles": 21160,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.151315 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.151314538083791,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.151315 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0061_stage3_100k_qwen2_v1_shell_030627",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0061_stage3_100k_qwen2_v1_shell_030627",
+        "object_type": "Baby Cushion",
+        "canonical_id": "cushion_shell__baby_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0061_stage3_100k_qwen2_v1_shell_030627/collision/collision.obj",
+        "extent_m": [
+          0.3052064135578758,
+          0.3225076002407655,
+          0.1400539574481029
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 10307,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.140054 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1400539574481029,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.140054 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0062_stage3_100k_qwen2_v1_shell_069428",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0062_stage3_100k_qwen2_v1_shell_069428",
+        "object_type": "Beanbag Chair",
+        "canonical_id": "cushion_shell__beanbag_chair",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0062_stage3_100k_qwen2_v1_shell_069428/collision/collision.obj",
+        "extent_m": [
+          0.3225251764968622,
+          0.3135851897956805,
+          0.2113196956736816
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 14930,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.211320 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2113196956736816,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.211320 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0063_stage3_100k_qwen2_v1_shell_026265",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0063_stage3_100k_qwen2_v1_shell_026265",
+        "object_type": "Coccyx Cushion",
+        "canonical_id": "cushion_shell__coccyx_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0063_stage3_100k_qwen2_v1_shell_026265/collision/collision.obj",
+        "extent_m": [
+          0.3019448474259945,
+          0.3225397685513799,
+          0.2202239537991943
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 11783,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.220224 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2202239537991943,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.220224 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0064_stage3_100k_qwen2_v1_shell_007352",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0064_stage3_100k_qwen2_v1_shell_007352",
+        "object_type": "Cushion Foam Core",
+        "canonical_id": "cushion_shell__cushion_foam_core",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0064_stage3_100k_qwen2_v1_shell_007352/collision/collision.obj",
+        "extent_m": [
+          0.32262950980953986,
+          0.25950225772170643,
+          0.16907055931232398
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 14821,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.169071 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.16907055931232398,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.169071 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0065_stage3_100k_qwen2_v1_shell_001533",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0065_stage3_100k_qwen2_v1_shell_001533",
+        "object_type": "Donut Cushion",
+        "canonical_id": "cushion_shell__donut_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0065_stage3_100k_qwen2_v1_shell_001533/collision/collision.obj",
+        "extent_m": [
+          0.3059663914522387,
+          0.3226804389352048,
+          0.1128890488026619
+        ],
+        "youngs_modulus_pa": 45000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 8416,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.112889 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1128890488026619,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.112889 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0066_stage3_100k_qwen2_v1_shell_000079",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0066_stage3_100k_qwen2_v1_shell_000079",
+        "object_type": "Floor Cushion",
+        "canonical_id": "cushion_shell__floor_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0066_stage3_100k_qwen2_v1_shell_000079/collision/collision.obj",
+        "extent_m": [
+          0.3212714611201008,
+          0.32280532219349456,
+          0.1361775129154326
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 11847,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.136178 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1361775129154326,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.136178 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0067_stage3_100k_qwen2_v1_shell_098050",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0067_stage3_100k_qwen2_v1_shell_098050",
+        "object_type": "Flotation Cushion",
+        "canonical_id": "cushion_shell__flotation_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0067_stage3_100k_qwen2_v1_shell_098050/collision/collision.obj",
+        "extent_m": [
+          0.2498722918721644,
+          0.3221897904449502,
+          0.1560284103473499
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 9414,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.156028 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1560284103473499,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.156028 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0068_stage3_100k_qwen2_v1_shell_020938",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0068_stage3_100k_qwen2_v1_shell_020938",
+        "object_type": "Heel Cushion",
+        "canonical_id": "cushion_shell__heel_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0068_stage3_100k_qwen2_v1_shell_020938/collision/collision.obj",
+        "extent_m": [
+          0.32238714261725,
+          0.2331918912887363,
+          0.1635652997408224
+        ],
+        "youngs_modulus_pa": 45000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 7466,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.163565 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1635652997408224,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.163565 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0069_stage3_100k_qwen2_v1_shell_019484",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0069_stage3_100k_qwen2_v1_shell_019484",
+        "object_type": "Knee Pillow",
+        "canonical_id": "cushion_shell__knee_pillow",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0069_stage3_100k_qwen2_v1_shell_019484/collision/collision.obj",
+        "extent_m": [
+          0.31335074061964374,
+          0.3229181268039464,
+          0.2519066889731397
+        ],
+        "youngs_modulus_pa": 45000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 17636,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.251907 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2519066889731397,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.251907 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0070_stage3_100k_qwen2_v1_shell_041310",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0070_stage3_100k_qwen2_v1_shell_041310",
+        "object_type": "Latex Cushion",
+        "canonical_id": "cushion_shell__latex_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0070_stage3_100k_qwen2_v1_shell_041310/collision/collision.obj",
+        "extent_m": [
+          0.3222226579961237,
+          0.1918013930103069,
+          0.089436046107121
+        ],
+        "youngs_modulus_pa": 150000.0,
+        "poisson_ratio": 0.46,
+        "density_kg_m3": 1050.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 8315,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.089436 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.089436046107121,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.089436 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0071_stage3_100k_qwen2_v1_shell_034525",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0071_stage3_100k_qwen2_v1_shell_034525",
+        "object_type": "Neck Pillow Foam Core",
+        "canonical_id": "cushion_shell__neck_pillow_foam_core",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0071_stage3_100k_qwen2_v1_shell_034525/collision/collision.obj",
+        "extent_m": [
+          0.3223064693812669,
+          0.2853379194085058,
+          0.1450648629501673
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 7409,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.145065 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1450648629501673,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.145065 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0072_stage3_100k_qwen2_v1_shell_004945",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0072_stage3_100k_qwen2_v1_shell_004945",
+        "object_type": "Positioning Cushion",
+        "canonical_id": "cushion_shell__positioning_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0072_stage3_100k_qwen2_v1_shell_004945/collision/collision.obj",
+        "extent_m": [
+          0.22197737275716828,
+          0.322399584637193,
+          0.1721481119588694
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 1005,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.172148 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1721481119588694,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.172148 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0073_stage3_100k_qwen2_v1_shell_071393",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0073_stage3_100k_qwen2_v1_shell_071393",
+        "object_type": "Silicone Cushion",
+        "canonical_id": "cushion_shell__silicone_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0073_stage3_100k_qwen2_v1_shell_071393/collision/collision.obj",
+        "extent_m": [
+          0.32299605427447253,
+          0.18242894186220138,
+          0.0817092276515856
+        ],
+        "youngs_modulus_pa": 100000.0,
+        "poisson_ratio": 0.47,
+        "density_kg_m3": 1080.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 6396,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.081709 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.0817092276515856,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.081709 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0074_stage3_100k_qwen2_v1_shell_016589",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0074_stage3_100k_qwen2_v1_shell_016589",
+        "object_type": "Sofa Armrest Padding",
+        "canonical_id": "cushion_shell__sofa_armrest_padding",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0074_stage3_100k_qwen2_v1_shell_016589/collision/collision.obj",
+        "extent_m": [
+          0.32239361157340807,
+          0.2154263129908319,
+          0.1683032207459973
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 7898,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.168303 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1683032207459973,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.168303 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0075_stage3_100k_qwen2_v1_shell_085460",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0075_stage3_100k_qwen2_v1_shell_085460",
+        "object_type": "Sofa Back Cushion",
+        "canonical_id": "cushion_shell__sofa_back_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0075_stage3_100k_qwen2_v1_shell_085460/collision/collision.obj",
+        "extent_m": [
+          0.32206312412521076,
+          0.27564925338252233,
+          0.1582373310158219
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 13419,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.158237 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1582373310158219,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.158237 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0076_stage3_100k_qwen2_v1_shell_099119",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0076_stage3_100k_qwen2_v1_shell_099119",
+        "object_type": "Inflatable Animal Toy",
+        "canonical_id": "inflatable_shell__inflatable_animal_toy",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0076_stage3_100k_qwen2_v1_shell_099119/collision/collision.obj",
+        "extent_m": [
+          0.3230926696378971,
+          0.2540447666138195,
+          0.1690643300183727
+        ],
+        "youngs_modulus_pa": 74340.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 533.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.001,
+        "source_substeps": 20,
+        "estimated_particles": 8188,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.169064 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1690643300183727,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.169064 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0077_stage3_100k_qwen2_v1_shell_038495",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0077_stage3_100k_qwen2_v1_shell_038495",
+        "object_type": "Inflatable Ball",
+        "canonical_id": "inflatable_shell__inflatable_ball",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0077_stage3_100k_qwen2_v1_shell_038495/collision/collision.obj",
+        "extent_m": [
+          0.324210662503683,
+          0.31589557197537144,
+          0.3031823945981737
+        ],
+        "youngs_modulus_pa": 82600.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 533.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.001,
+        "source_substeps": 20,
+        "estimated_particles": 36928,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.303182 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.3031823945981737,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.303182 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0078_stage3_100k_qwen2_v1_shell_008911",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0078_stage3_100k_qwen2_v1_shell_008911",
+        "object_type": "Inflatable Bladder",
+        "canonical_id": "inflatable_shell__inflatable_bladder",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0078_stage3_100k_qwen2_v1_shell_008911/collision/collision.obj",
+        "extent_m": [
+          0.3236758838876788,
+          0.3156475111564039,
+          0.19282095536589672
+        ],
+        "youngs_modulus_pa": 74340.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 533.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.001,
+        "source_substeps": 20,
+        "estimated_particles": 18858,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.192821 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.19282095536589672,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.192821 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0079_stage3_100k_qwen2_v1_shell_025403",
+        "object_type": "Inflatable Mattress",
+        "canonical_id": "inflatable_shell__inflatable_mattress",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0079_stage3_100k_qwen2_v1_shell_025403/collision/collision.obj",
+        "extent_m": [
+          0.1573266583957461,
+          0.3223679197105435,
+          0.053657782787559095
+        ],
+        "youngs_modulus_pa": 74340.0,
+        "poisson_ratio": 0.4,
+        "density_kg_m3": 533.0,
+        "particle_size_m": 0.008,
+        "grid_density_per_m": 144.0,
+        "source_dt_s": 0.001,
+        "source_substeps": 20,
+        "estimated_particles": 2479,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": true,
+        "status": "eligible_geometry",
+        "reason": "at least one original mesh axis fits the 66 mm jaw opening",
+        "minimum_extent_m": 0.053657782787559095,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": true,
+      "attempt": {
+        "schema_version": 1,
+        "asset": {
+          "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+          "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0079_stage3_100k_qwen2_v1_shell_025403",
+          "object_type": "Inflatable Mattress",
+          "canonical_id": "inflatable_shell__inflatable_mattress",
+          "geometry_family": "shell",
+          "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0079_stage3_100k_qwen2_v1_shell_025403/collision/collision.obj",
+          "extent_m": [
+            0.1573266583957461,
+            0.3223679197105435,
+            0.053657782787559095
+          ],
+          "youngs_modulus_pa": 74340.0,
+          "poisson_ratio": 0.4,
+          "density_kg_m3": 533.0,
+          "particle_size_m": 0.008,
+          "grid_density_per_m": 144.0,
+          "source_dt_s": 0.001,
+          "source_substeps": 20,
+          "estimated_particles": 2479,
+          "source_solver": "genesis_mpm_elastic"
+        },
+        "status": "failed_gates",
+        "reason": "failed gates: object_still_lifted_at_transfer_end, all_particles_horizontally_inside_tray",
+        "orientation": {
+          "euler_deg": [
+            0,
+            90,
+            90
+          ],
+          "rotation_matrix": [
+            [
+              3.749399456654644e-33,
+              -1.0,
+              6.123233995736766e-17
+            ],
+            [
+              6.123233995736766e-17,
+              6.123233995736766e-17,
+              1.0
+            ],
+            [
+              -1.0,
+              0.0,
+              6.123233995736766e-17
+            ]
+          ],
+          "bounds_before_translation_m": [
+            [
+              -0.160957822802195,
+              -0.0012849952782132998,
+              -0.0786343721094786
+            ],
+            [
+              0.1614100969083485,
+              0.05237278750934581,
+              0.0786922862862675
+            ]
+          ],
+          "extent_after_rotation_m": [
+            0.3223679197105435,
+            0.05365778278755911,
+            0.1573266583957461
+          ],
+          "jaw_clearance_m": 0.012342217212440894,
+          "scale": 1.0,
+          "candidate_orientation_count": 4
+        },
+        "scale": 1.0,
+        "spawn_position_m": [
+          0.47977386294692326,
+          -0.16554389611556627,
+          0.1376343721094786
+        ],
+        "runtime": {
+          "backend": "backend.cuda",
+          "genesis_module": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/envs/genesis/lib/python3.10/site-packages/genesis/__init__.py",
+          "genesis_version": "1.1.2",
+          "cuda_device": "NVIDIA A800 80GB PCIe",
+          "write_isolation": {
+            "installed_source_read_only": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/envs/genesis/lib/python3.10/site-packages/genesis",
+            "runtime_source": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/piper_pickplace_60/.cache/genesis_runtime",
+            "pbs_binary": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/piper_pickplace_60/.cache/genesis_runtime/ext/VolumeSampling",
+            "temporary_directory": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/piper_pickplace_60/.cache/tmp"
+          }
+        },
+        "protocol": {
+          "dt_s": 0.002,
+          "substeps": 64,
+          "stage_steps": {
+            "initial_hold": 60,
+            "approach": 40,
+            "descend": 100,
+            "close": 170,
+            "grip_hold": 80,
+            "lift": 300,
+            "lifted_hold": 150,
+            "transfer": 800,
+            "lower_into_tray": 400,
+            "open": 250,
+            "retreat": 300,
+            "settle_in_tray": 400
+          },
+          "table_top_z_m": 0.055,
+          "tray_floor_z_m": 0.063,
+          "grasp_height_fraction_above_com": 0.4,
+          "robot_mpm_coupling_friction": 6.0,
+          "scale": 1.0
+        },
+        "ik": {
+          "reset_upper_quarter_open_jaw": {
+            "target_grip_center_m": [
+              0.48,
+              -0.14,
+              0.2005939925561715
+            ],
+            "target_tcp_m": [
+              0.5270727749946837,
+              -0.13999995629410422,
+              0.19423695610156638
+            ],
+            "arm_q_rad": [
+              -0.44489794969558716,
+              1.8895297050476074,
+              -1.0592942237854004,
+              -0.6995828747749329,
+              -0.7235981225967407,
+              0.4989098608493805
+            ],
+            "reported_error": [
+              0.0001398324966430664,
+              -0.0001834481954574585,
+              0.0002628117799758911,
+              5.4516131058335304e-05,
+              -7.277726399479434e-05,
+              0.00018787408771459013
+            ],
+            "position_error_norm_m": 0.0003496804244279729,
+            "rotation_error_norm_rad": 0.00020872281028849502
+          },
+          "approach": {
+            "target_grip_center_m": [
+              0.4724868725062677,
+              -0.14773963492374295,
+              0.19344183105177004
+            ],
+            "target_tcp_m": [
+              0.5195596475009515,
+              -0.14773959121784716,
+              0.18708479459716493
+            ],
+            "arm_q_rad": [
+              -0.47616666555404663,
+              1.8955023288726807,
+              -1.0349700450897217,
+              -0.7187467217445374,
+              -0.7616874575614929,
+              0.49620017409324646
+            ],
+            "reported_error": [
+              -1.1563301086425781e-05,
+              -0.000390470027923584,
+              -0.00019910931587219238,
+              -0.0006901340675540268,
+              8.058548701228574e-05,
+              -9.10111193661578e-05
+            ],
+            "position_error_norm_m": 0.000438457606053028,
+            "rotation_error_norm_rad": 0.0007007582149100745
+          },
+          "descend": {
+            "target_grip_center_m": [
+              0.4724868725062677,
+              -0.14773963492374295,
+              0.19344183105177004
+            ],
+            "target_tcp_m": [
+              0.5195596475009515,
+              -0.14773959121784716,
+              0.18708479459716493
+            ],
+            "arm_q_rad": [
+              -0.47616666555404663,
+              1.8955023288726807,
+              -1.0349700450897217,
+              -0.7187467217445374,
+              -0.7616874575614929,
+              0.49620017409324646
+            ],
+            "reported_error": [
+              -1.1563301086425781e-05,
+              -0.000390470027923584,
+              -0.00019910931587219238,
+              -0.0006901340675540268,
+              8.058548701228574e-05,
+              -9.10111193661578e-05
+            ],
+            "position_error_norm_m": 0.000438457606053028,
+            "rotation_error_norm_rad": 0.0007007582149100745
+          },
+          "lift": {
+            "target_grip_center_m": [
+              0.4724868725062677,
+              -0.14773963492374295,
+              0.33844183105177006
+            ],
+            "target_tcp_m": [
+              0.5195596475009515,
+              -0.14773959121784716,
+              0.33208479459716495
+            ],
+            "arm_q_rad": [
+              -0.47688108682632446,
+              1.6913659572601318,
+              -1.3756743669509888,
+              -1.4198968410491943,
+              -0.47808024287223816,
+              1.332192063331604
+            ],
+            "reported_error": [
+              6.335973739624023e-05,
+              -7.750093936920166e-05,
+              0.0003127753734588623,
+              3.8931408198550344e-05,
+              0.00014251470565795898,
+              4.336632991908118e-05
+            ],
+            "position_error_norm_m": 0.000328404150656413,
+            "rotation_error_norm_rad": 0.0001539699140863157
+          },
+          "transfer": {
+            "target_grip_center_m": [
+              0.4724868725062677,
+              0.1522603650762571,
+              0.34644183105177007
+            ],
+            "target_tcp_m": [
+              0.5195596475009515,
+              0.15226040878215288,
+              0.34008479459716495
+            ],
+            "arm_q_rad": [
+              0.4899376332759857,
+              1.6958355903625488,
+              -1.4151487350463867,
+              -1.649335503578186,
+              0.4867732524871826,
+              1.7308754920959473
+            ],
+            "reported_error": [
+              -2.86102294921875e-05,
+              -2.4616718292236328e-05,
+              -9.641051292419434e-05,
+              5.431558747659437e-06,
+              -4.26173210144043e-05,
+              -1.657589905335044e-06
+            ],
+            "position_error_norm_m": 0.0001035350909275749,
+            "rotation_error_norm_rad": 4.299401685314284e-05
+          },
+          "lower_into_tray": {
+            "target_grip_center_m": [
+              0.4724868725062677,
+              0.1522603650762571,
+              0.20144183105177005
+            ],
+            "target_tcp_m": [
+              0.5195596475009515,
+              0.15226040878215288,
+              0.19508479459716493
+            ],
+            "arm_q_rad": [
+              0.4890371561050415,
+              1.8845784664154053,
+              -1.0555769205093384,
+              0.7572488188743591,
+              -0.7445053458213806,
+              -0.5363477468490601
+            ],
+            "reported_error": [
+              2.6404857635498047e-05,
+              0.00017480552196502686,
+              0.00021164119243621826,
+              -6.93089168635197e-05,
+              7.534025644417852e-05,
+              -9.252057498088107e-05
+            ],
+            "position_error_norm_m": 0.00027576472100694963,
+            "rotation_error_norm_rad": 0.00013798527817365772
+          },
+          "retreat": {
+            "target_grip_center_m": [
+              0.4724868725062677,
+              0.1522603650762571,
+              0.34644183105177007
+            ],
+            "target_tcp_m": [
+              0.5195596475009515,
+              0.15226040878215288,
+              0.34008479459716495
+            ],
+            "arm_q_rad": [
+              0.48928558826446533,
+              1.695088267326355,
+              -1.4114720821380615,
+              1.4858752489089966,
+              -0.4863634407520294,
+              -1.4037322998046875
+            ],
+            "reported_error": [
+              0.00011813640594482422,
+              0.0001074075698852539,
+              0.0005421638488769531,
+              -6.807614408899099e-05,
+              0.0002489685721229762,
+              -5.1989649364259094e-05
+            ],
+            "position_error_norm_m": 0.000565185133834293,
+            "rotation_error_norm_rad": 0.00026329191962534145
+          }
+        },
+        "metrics": {
+          "settled_com_m": [
+            0.4724868725062677,
+            -0.14773963492374295,
+            0.133522668957177
+          ],
+          "settled_aabb_min_m": [
+            0.319803386926651,
+            -0.16401627659797668,
+            0.06058171018958092
+          ],
+          "settled_aabb_max_m": [
+            0.6367266774177551,
+            -0.11794117838144302,
+            0.21037961542606354
+          ],
+          "settled_jaw_axis_extent_m": 0.04607509821653366,
+          "settled_height_m": 0.14979790523648262,
+          "grasp_z_offset_from_com_m": 0.059919162094593054,
+          "active_particle_count": 2459,
+          "particle_count": 2459,
+          "final_active_particle_count": 2459,
+          "active_particle_count_constant": true,
+          "finite_state": true,
+          "max_lift_delta_z_m": 0.05796927021874701,
+          "transfer_end_com_delta_z_m": -0.037455467882196114,
+          "transfer_end_aabb_min_z_m": 0.055639322847127914,
+          "final_com_m": [
+            0.34997333348064025,
+            -0.09785073457400141,
+            0.09194615056670842
+          ],
+          "final_aabb_min_m": [
+            0.1827882081270218,
+            -0.1774396002292633,
+            0.05488510802388191
+          ],
+          "final_aabb_max_m": [
+            0.5115598440170288,
+            0.17639124393463135,
+            0.36424848437309265
+          ],
+          "final_speed_rms_m_s": 0.021361042684536074,
+          "final_speed_max_m_s": 0.5060335527860829,
+          "final_grip_center_m": [
+            0.47238104857175295,
+            0.1521715084753481,
+            0.3457854910921326
+          ],
+          "final_grip_object_distance_m": 0.3767348955587168,
+          "commanded_close_width_m": 0.03207509821653366,
+          "frame_count": 88,
+          "minimum_frame_std": 33.98328399658203,
+          "median_frame_std": 36.37614822387695,
+          "simulated_time_s": 6.1000000000000005,
+          "physics_step_count": 3050,
+          "build_seconds": 19.526204582303762,
+          "total_seconds_before_encoding": 243.78797855973244,
+          "torch_peak_allocated_bytes": 841728,
+          "torch_peak_reserved_bytes": 2097152
+        },
+        "phase_end_metrics": [
+          {
+            "stage": "initial_hold",
+            "step": 60,
+            "com_m": [
+              0.4724868725062677,
+              -0.14773963492374295,
+              0.133522668957177
+            ],
+            "aabb_min_m": [
+              0.319803386926651,
+              -0.16401627659797668,
+              0.06058171018958092
+            ],
+            "aabb_max_m": [
+              0.6367266774177551,
+              -0.11794117838144302,
+              0.21037961542606354
+            ],
+            "speed_rms_m_s": 0.08626920629854912,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.06599999964237213,
+            "collision_pad_gap_y_m": 0.06595848500728607,
+            "grip_center_m": [
+              0.4797760776397461,
+              -0.1398480375566038,
+              0.19937815509550477
+            ]
+          },
+          {
+            "stage": "approach",
+            "step": 100,
+            "com_m": [
+              0.4702245619734306,
+              -0.14947186293472067,
+              0.13107438741805544
+            ],
+            "aabb_min_m": [
+              0.31888216733932495,
+              -0.16591407358646393,
+              0.05935890972614288
+            ],
+            "aabb_max_m": [
+              0.6338813304901123,
+              -0.12111150473356247,
+              0.20702482759952545
+            ],
+            "speed_rms_m_s": 0.09495584279797142,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.06600004807114601,
+            "collision_pad_gap_y_m": 0.06597179919481277,
+            "grip_center_m": [
+              0.47601097143857424,
+              -0.1436929990806135,
+              0.19621331237070466
+            ]
+          },
+          {
+            "stage": "descend",
+            "step": 200,
+            "com_m": [
+              0.4677423763294538,
+              -0.15384547588736994,
+              0.12877139802408588
+            ],
+            "aabb_min_m": [
+              0.3168528079986572,
+              -0.17418678104877472,
+              0.05635237321257591
+            ],
+            "aabb_max_m": [
+              0.6311284899711609,
+              -0.1236243024468422,
+              0.20394377410411835
+            ],
+            "speed_rms_m_s": 0.027184886952233228,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.06600584089756012,
+            "collision_pad_gap_y_m": 0.06596311926841736,
+            "grip_center_m": [
+              0.4725642732497925,
+              -0.1472461213626417,
+              0.19321488581411744
+            ]
+          },
+          {
+            "stage": "close",
+            "step": 370,
+            "com_m": [
+              0.4673156950618252,
+              -0.15280938379075673,
+              0.12776048196803122
+            ],
+            "aabb_min_m": [
+              0.31636369228363037,
+              -0.16947567462921143,
+              0.05534752085804939
+            ],
+            "aabb_max_m": [
+              0.6306419372558594,
+              -0.12357552349567413,
+              0.20347389578819275
+            ],
+            "speed_rms_m_s": 0.012474593378599751,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.051200808957219124,
+            "collision_pad_gap_y_m": 0.05115939676761627,
+            "grip_center_m": [
+              0.47248738325803225,
+              -0.14731359382052744,
+              0.19306074820272828
+            ]
+          },
+          {
+            "stage": "grip_hold",
+            "step": 450,
+            "com_m": [
+              0.4672191526018153,
+              -0.15236961284380418,
+              0.12740938339250607
+            ],
+            "aabb_min_m": [
+              0.31621110439300537,
+              -0.16939644515514374,
+              0.055146146565675735
+            ],
+            "aabb_max_m": [
+              0.6306147575378418,
+              -0.1236131340265274,
+              0.20325730741024017
+            ],
+            "speed_rms_m_s": 0.002465243621838492,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.04933319427073002,
+            "collision_pad_gap_y_m": 0.04929153621196747,
+            "grip_center_m": [
+              0.4724853567001099,
+              -0.14731188018699015,
+              0.19305566690676118
+            ]
+          },
+          {
+            "stage": "lift",
+            "step": 750,
+            "com_m": [
+              0.41259699647821224,
+              -0.1507950792329226,
+              0.19000948502728734
+            ],
+            "aabb_min_m": [
+              0.2872586250305176,
+              -0.23718948662281036,
+              0.05955404043197632
+            ],
+            "aabb_max_m": [
+              0.5322926044464111,
+              -0.04620712995529175,
+              0.3433636426925659
+            ],
+            "speed_rms_m_s": 0.252863164495746,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.03242339380085468,
+            "collision_pad_gap_y_m": 0.031929031014442444,
+            "grip_center_m": [
+              0.4734144142982239,
+              -0.14641761680026377,
+              0.33193057022802736
+            ]
+          },
+          {
+            "stage": "lifted_hold",
+            "step": 900,
+            "com_m": [
+              0.35756575569795274,
+              -0.12518970251398487,
+              0.11291041701044334
+            ],
+            "aabb_min_m": [
+              0.19757840037345886,
+              -0.19261586666107178,
+              0.05966891348361969
+            ],
+            "aabb_max_m": [
+              0.519085705280304,
+              -0.03935033828020096,
+              0.3485727608203888
+            ],
+            "speed_rms_m_s": 0.7619800386526366,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.032103406265378,
+            "collision_pad_gap_y_m": 0.032100170850753784,
+            "grip_center_m": [
+              0.4724354676124329,
+              -0.1476804008044752,
+              0.3380129262041321
+            ]
+          },
+          {
+            "stage": "transfer",
+            "step": 1700,
+            "com_m": [
+              0.3502096586738383,
+              -0.09869871990722628,
+              0.09606720107498087
+            ],
+            "aabb_min_m": [
+              0.18287362158298492,
+              -0.17795856297016144,
+              0.055639322847127914
+            ],
+            "aabb_max_m": [
+              0.5115598440170288,
+              0.15251827239990234,
+              0.36165139079093933
+            ],
+            "speed_rms_m_s": 0.00679981561136262,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.03207496181130409,
+            "collision_pad_gap_y_m": 0.03204737603664398,
+            "grip_center_m": [
+              0.4732019833442444,
+              0.1508955965481249,
+              0.34612371764891053
+            ]
+          },
+          {
+            "stage": "lower_into_tray",
+            "step": 2100,
+            "com_m": [
+              0.3502478438598831,
+              -0.09799237430910722,
+              0.08951899644416152
+            ],
+            "aabb_min_m": [
+              0.1827882081270218,
+              -0.17757709324359894,
+              0.05516057461500168
+            ],
+            "aabb_max_m": [
+              0.5115598440170288,
+              0.1779278665781021,
+              0.2180252969264984
+            ],
+            "speed_rms_m_s": 0.02448456492011634,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.032164350152015686,
+            "collision_pad_gap_y_m": 0.029303565621376038,
+            "grip_center_m": [
+              0.4730324677345032,
+              0.16189441184620534,
+              0.20462114356272126
+            ]
+          },
+          {
+            "stage": "open",
+            "step": 2350,
+            "com_m": [
+              0.3502271408385598,
+              -0.09806073589713266,
+              0.08881177952124511
+            ],
+            "aabb_min_m": [
+              0.1827882081270218,
+              -0.1774396002292633,
+              0.055053528398275375
+            ],
+            "aabb_max_m": [
+              0.5115598440170288,
+              0.17340311408042908,
+              0.21488913893699646
+            ],
+            "speed_rms_m_s": 0.0014497990363091383,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.059432502835989,
+            "collision_pad_gap_y_m": 0.059415288269519806,
+            "grip_center_m": [
+              0.47246753491132204,
+              0.15209263662914907,
+              0.2012474163603058
+            ]
+          },
+          {
+            "stage": "retreat",
+            "step": 2650,
+            "com_m": [
+              0.3502972368097926,
+              -0.09788986119801871,
+              0.09311350581060827
+            ],
+            "aabb_min_m": [
+              0.1827882081270218,
+              -0.1774396002292633,
+              0.05498047545552254
+            ],
+            "aabb_max_m": [
+              0.5115598440170288,
+              0.17643767595291138,
+              0.358795702457428
+            ],
+            "speed_rms_m_s": 0.02057371935476248,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.06595988944172859,
+            "collision_pad_gap_y_m": 0.0654958188533783,
+            "grip_center_m": [
+              0.4732356599685425,
+              0.15087436239342367,
+              0.34060796342604066
+            ]
+          },
+          {
+            "stage": "settle_in_tray",
+            "step": 3050,
+            "com_m": [
+              0.34997333348064025,
+              -0.09785073457400141,
+              0.09194615056670842
+            ],
+            "aabb_min_m": [
+              0.1827882081270218,
+              -0.1774396002292633,
+              0.05488510802388191
+            ],
+            "aabb_max_m": [
+              0.5115598440170288,
+              0.17639124393463135,
+              0.36424848437309265
+            ],
+            "speed_rms_m_s": 0.021361042684536074,
+            "active_count": 2459,
+            "actual_jaw_width_m": 0.06598649173974991,
+            "collision_pad_gap_y_m": 0.06598043441772461,
+            "grip_center_m": [
+              0.47238104857175295,
+              0.1521715084753481,
+              0.3457854910921326
+            ]
+          }
+        ],
+        "assessment": {
+          "status": "failed_gates",
+          "gates": {
+            "finite_state": true,
+            "active_particle_count_constant": true,
+            "object_lifted_over_50mm": true,
+            "object_still_lifted_at_transfer_end": false,
+            "all_particles_horizontally_inside_tray": false,
+            "object_resting_on_tray_floor": true,
+            "object_released_from_gripper": true,
+            "final_particle_rms_speed_under_0_12m_s": true,
+            "object_extent_not_exploded": true,
+            "video_has_at_least_60_nonblank_frames": true
+          },
+          "all_gates_pass": false,
+          "tray_horizontal_tolerance_m": 0.008
+        },
+        "video": null,
+        "elapsed_seconds": 243.7889881748706
+      },
+      "final_status": "failed_gates",
+      "reason": "failed gates: object_still_lifted_at_transfer_end, all_particles_horizontally_inside_tray",
+      "orientation": {
+        "euler_deg": [
+          0,
+          90,
+          90
+        ],
+        "rotation_matrix": [
+          [
+            3.749399456654644e-33,
+            -1.0,
+            6.123233995736766e-17
+          ],
+          [
+            6.123233995736766e-17,
+            6.123233995736766e-17,
+            1.0
+          ],
+          [
+            -1.0,
+            0.0,
+            6.123233995736766e-17
+          ]
+        ],
+        "bounds_before_translation_m": [
+          [
+            -0.160957822802195,
+            -0.0012849952782132998,
+            -0.0786343721094786
+          ],
+          [
+            0.1614100969083485,
+            0.05237278750934581,
+            0.0786922862862675
+          ]
+        ],
+        "extent_after_rotation_m": [
+          0.3223679197105435,
+          0.05365778278755911,
+          0.1573266583957461
+        ],
+        "jaw_clearance_m": 0.012342217212440894,
+        "scale": 1.0,
+        "candidate_orientation_count": 4
+      }
+    },
+    {
+      "asset": {
+        "asset_id": "0080_stage3_100k_qwen2_v1_shell_064712",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0080_stage3_100k_qwen2_v1_shell_064712",
+        "object_type": "Ankle Support Cushion",
+        "canonical_id": "padded_support__ankle_support_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0080_stage3_100k_qwen2_v1_shell_064712/collision/collision.obj",
+        "extent_m": [
+          0.3223023852511264,
+          0.1950185258859285,
+          0.14884453455409188
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 6002,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.148845 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.14884453455409188,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.148845 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0081_stage3_100k_qwen2_v1_shell_074903",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0081_stage3_100k_qwen2_v1_shell_074903",
+        "object_type": "Garden Kneeler Pad",
+        "canonical_id": "padded_support__garden_kneeler_pad",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0081_stage3_100k_qwen2_v1_shell_074903/collision/collision.obj",
+        "extent_m": [
+          0.322168319455096,
+          0.1761484202643703,
+          0.1208729040796594
+        ],
+        "youngs_modulus_pa": 45000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 7910,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.120873 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1208729040796594,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.120873 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0082_stage3_100k_qwen2_v1_shell_004094",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0082_stage3_100k_qwen2_v1_shell_004094",
+        "object_type": "Headphone Ear Pad Foam",
+        "canonical_id": "padded_support__headphone_ear_pad_foam",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0082_stage3_100k_qwen2_v1_shell_004094/collision/collision.obj",
+        "extent_m": [
+          0.23547553372928792,
+          0.3223956576943029,
+          0.1657273108913275
+        ],
+        "youngs_modulus_pa": 45000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 12036,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.165727 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1657273108913275,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.165727 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0083_stage3_100k_qwen2_v1_shell_016220",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0083_stage3_100k_qwen2_v1_shell_016220",
+        "object_type": "IV Injection Training Pad",
+        "canonical_id": "padded_support__iv_injection_training_pad",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0083_stage3_100k_qwen2_v1_shell_016220/collision/collision.obj",
+        "extent_m": [
+          0.20272208409960768,
+          0.3223157300826651,
+          0.1279318256001937
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 6145,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.127932 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1279318256001937,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.127932 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0084_stage3_100k_qwen2_v1_shell_052111",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0084_stage3_100k_qwen2_v1_shell_052111",
+        "object_type": "Knee Pad Foam Insert",
+        "canonical_id": "padded_support__knee_pad_foam_insert",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0084_stage3_100k_qwen2_v1_shell_052111/collision/collision.obj",
+        "extent_m": [
+          0.26516819264598257,
+          0.3225907091368071,
+          0.2107359756921392
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 5805,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.210736 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2107359756921392,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.210736 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0085_stage3_100k_qwen2_v1_shell_010402",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0085_stage3_100k_qwen2_v1_shell_010402",
+        "object_type": "Knee Support Cushion",
+        "canonical_id": "padded_support__knee_support_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0085_stage3_100k_qwen2_v1_shell_010402/collision/collision.obj",
+        "extent_m": [
+          0.2184439855152987,
+          0.3221284196255777,
+          0.167462206586973
+        ],
+        "youngs_modulus_pa": 50000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 1367,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.167462 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.167462206586973,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.167462 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0086_stage3_100k_qwen2_v1_shell_086069",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0086_stage3_100k_qwen2_v1_shell_086069",
+        "object_type": "Medical Support Strap",
+        "canonical_id": "padded_support__medical_support_strap",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0086_stage3_100k_qwen2_v1_shell_086069/collision/collision.obj",
+        "extent_m": [
+          0.30370016545333567,
+          0.3249975142081588,
+          0.16053052644671148
+        ],
+        "youngs_modulus_pa": 60000.0,
+        "poisson_ratio": 0.34,
+        "density_kg_m3": 460.0,
+        "particle_size_m": 0.006,
+        "grid_density_per_m": 160.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 24619,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.160531 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.16053052644671148,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.160531 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0087_stage3_100k_qwen2_v1_shell_052121",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0087_stage3_100k_qwen2_v1_shell_052121",
+        "object_type": "Neoprene Pad",
+        "canonical_id": "padded_support__neoprene_pad",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0087_stage3_100k_qwen2_v1_shell_052121/collision/collision.obj",
+        "extent_m": [
+          0.3221755912096777,
+          0.1803460515668352,
+          0.0716764437738218
+        ],
+        "youngs_modulus_pa": 45000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 4529,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.071676 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.0716764437738218,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.071676 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0088_stage3_100k_qwen2_v1_shell_022052",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0088_stage3_100k_qwen2_v1_shell_022052",
+        "object_type": "Posture Support Cushion",
+        "canonical_id": "padded_support__posture_support_cushion",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0088_stage3_100k_qwen2_v1_shell_022052/collision/collision.obj",
+        "extent_m": [
+          0.30986967704977275,
+          0.3227617463803044,
+          0.1548435964510468
+        ],
+        "youngs_modulus_pa": 45000.0,
+        "poisson_ratio": 0.28,
+        "density_kg_m3": 180.0,
+        "particle_size_m": 0.009,
+        "grid_density_per_m": 128.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 14349,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.154844 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.1548435964510468,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.154844 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0089_stage3_100k_qwen2_v1_shell_058914",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0089_stage3_100k_qwen2_v1_shell_058914",
+        "object_type": "Seat Cushion Cover",
+        "canonical_id": "padded_support__seat_cushion_cover",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0089_stage3_100k_qwen2_v1_shell_058914/collision/collision.obj",
+        "extent_m": [
+          0.2904978784131839,
+          0.32569072912336106,
+          0.2217692490060021
+        ],
+        "youngs_modulus_pa": 54000.0,
+        "poisson_ratio": 0.34,
+        "density_kg_m3": 460.0,
+        "particle_size_m": 0.006,
+        "grid_density_per_m": 160.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 52228,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": false,
+        "status": "skipped_size",
+        "reason": "minimum original-scale extent 0.221769 m exceeds 0.066000 m jaw opening",
+        "minimum_extent_m": 0.2217692490060021,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": false,
+      "attempt": null,
+      "final_status": "skipped_size",
+      "reason": "minimum original-scale extent 0.221769 m exceeds 0.066000 m jaw opening"
+    },
+    {
+      "asset": {
+        "asset_id": "0090_stage3_100k_qwen2_v1_shell_020115",
+        "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0090_stage3_100k_qwen2_v1_shell_020115",
+        "object_type": "Steam Mop Pad",
+        "canonical_id": "padded_support__steam_mop_pad",
+        "geometry_family": "shell",
+        "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0090_stage3_100k_qwen2_v1_shell_020115/collision/collision.obj",
+        "extent_m": [
+          0.3240369566103149,
+          0.172402273858677,
+          0.0644621087999656
+        ],
+        "youngs_modulus_pa": 60000.0,
+        "poisson_ratio": 0.34,
+        "density_kg_m3": 460.0,
+        "particle_size_m": 0.006,
+        "grid_density_per_m": 160.0,
+        "source_dt_s": 0.0008,
+        "source_substeps": 24,
+        "estimated_particles": 8229,
+        "source_solver": "genesis_mpm_elastic"
+      },
+      "screen": {
+        "eligible": true,
+        "status": "eligible_geometry",
+        "reason": "at least one original mesh axis fits the 66 mm jaw opening",
+        "minimum_extent_m": 0.0644621087999656,
+        "jaw_open_width_m": 0.066,
+        "scale": 1.0
+      },
+      "attempted": true,
+      "attempt": {
+        "schema_version": 1,
+        "asset": {
+          "asset_id": "0090_stage3_100k_qwen2_v1_shell_020115",
+          "asset_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0090_stage3_100k_qwen2_v1_shell_020115",
+          "object_type": "Steam Mop Pad",
+          "canonical_id": "padded_support__steam_mop_pad",
+          "geometry_family": "shell",
+          "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0090_stage3_100k_qwen2_v1_shell_020115/collision/collision.obj",
+          "extent_m": [
+            0.3240369566103149,
+            0.172402273858677,
+            0.0644621087999656
+          ],
+          "youngs_modulus_pa": 60000.0,
+          "poisson_ratio": 0.34,
+          "density_kg_m3": 460.0,
+          "particle_size_m": 0.006,
+          "grid_density_per_m": 160.0,
+          "source_dt_s": 0.0008,
+          "source_substeps": 24,
+          "estimated_particles": 8229,
+          "source_solver": "genesis_mpm_elastic"
+        },
+        "status": "skipped_post_settle_size",
+        "reason": "settled jaw-axis extent 0.073592 m exceeds 70 mm tolerance",
+        "orientation": {
+          "euler_deg": [
+            90,
+            0,
+            0
+          ],
+          "rotation_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              6.123233995736766e-17,
+              -1.0
+            ],
+            [
+              -0.0,
+              1.0,
+              6.123233995736766e-17
+            ]
+          ],
+          "bounds_before_translation_m": [
+            [
+              -0.1620766094209734,
+              -0.0623329757602472,
+              -0.0859008982552979
+            ],
+            [
+              0.1619603471893415,
+              0.0021291330397183953,
+              0.0865013756033791
+            ]
+          ],
+          "extent_after_rotation_m": [
+            0.3240369566103149,
+            0.0644621087999656,
+            0.172402273858677
+          ],
+          "jaw_clearance_m": 0.0015378912000344053,
+          "scale": 1.0,
+          "candidate_orientation_count": 4
+        },
+        "scale": 1.0,
+        "initial_metrics": {
+          "settled_com_m": [
+            0.4795222639597379,
+            -0.13600235686302184,
+            0.1325976713854533
+          ],
+          "settled_aabb_min_m": [
+            0.3218016028404236,
+            -0.17670293152332306,
+            0.05690805986523628
+          ],
+          "settled_aabb_max_m": [
+            0.6383165717124939,
+            -0.10311093181371689,
+            0.22665250301361084
+          ],
+          "settled_jaw_axis_extent_m": 0.07359199970960617,
+          "settled_height_m": 0.16974444314837456,
+          "grasp_z_offset_from_com_m": 0.06789777725934983,
+          "active_particle_count": 8125
+        },
+        "phase_end_metrics": [
+          {
+            "stage": "initial_hold",
+            "step": 60,
+            "com_m": [
+              0.4795222639597379,
+              -0.13600235686302184,
+              0.1325976713854533
+            ],
+            "aabb_min_m": [
+              0.3218016028404236,
+              -0.17670293152332306,
+              0.05690805986523628
+            ],
+            "aabb_max_m": [
+              0.6383165717124939,
+              -0.10311093181371689,
+              0.22665250301361084
+            ],
+            "speed_rms_m_s": 0.11285902739231937,
+            "active_count": 8125,
+            "actual_jaw_width_m": 0.06597388535737991,
+            "collision_pad_gap_y_m": 0.06593553721904755,
+            "grip_center_m": [
+              0.4799141219970459,
+              -0.1400815387525114,
+              0.21316558860056306
+            ]
+          }
+        ],
+        "ik": {
+          "reset_upper_quarter_open_jaw": {
+            "target_grip_center_m": [
+              0.48,
+              -0.14,
+              0.21416204647280931
+            ],
+            "target_tcp_m": [
+              0.5270727749946837,
+              -0.13999995629410422,
+              0.2078050100182042
+            ],
+            "arm_q_rad": [
+              -0.44519636034965515,
+              1.8610949516296387,
+              -1.0815261602401733,
+              -0.7393811941146851,
+              -0.6857736110687256,
+              0.5508251786231995
+            ],
+            "reported_error": [
+              1.2934207916259766e-05,
+              -4.73707914352417e-05,
+              5.1349401473999023e-05,
+              2.0144372683716938e-05,
+              1.4603137969970703e-05,
+              4.632224590750411e-05
+            ],
+            "position_error_norm_m": 7.104960694726e-05,
+            "rotation_error_norm_rad": 5.2581345126439685e-05
+          }
+        },
+        "video": null,
+        "elapsed_seconds": 94.78784550353885
+      },
+      "final_status": "skipped_post_settle_size",
+      "reason": "settled jaw-axis extent 0.073592 m exceeds 70 mm tolerance",
+      "orientation": {
+        "euler_deg": [
+          90,
+          0,
+          0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            6.123233995736766e-17,
+            -1.0
+          ],
+          [
+            -0.0,
+            1.0,
+            6.123233995736766e-17
+          ]
+        ],
+        "bounds_before_translation_m": [
+          [
+            -0.1620766094209734,
+            -0.0623329757602472,
+            -0.0859008982552979
+          ],
+          [
+            0.1619603471893415,
+            0.0021291330397183953,
+            0.0865013756033791
+          ]
+        ],
+        "extent_after_rotation_m": [
+          0.3240369566103149,
+          0.0644621087999656,
+          0.172402273858677
+        ],
+        "jaw_clearance_m": 0.0015378912000344053,
+        "scale": 1.0,
+        "candidate_orientation_count": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "canonical_id": "handled_soft_bag__backpack_fabric_body",
+  "caption": "A mustard yellow wide rectangular two-handle body backpack fabric body, made of cotton textile, with a smooth satin surface, shown in a three-quarter view.",
+  "geometry_family": "bag",
+  "link_methods": {
+    "collision": "hardlink",
+    "input_image": "hardlink",
+    "mpm_report": "hardlink",
+    "preview_gif": "hardlink"
+  },
+  "material_family": "textile",
+  "object_type": "Backpack Fabric Body",
+  "paths": {
+    "captions": "captions.json",
+    "collision_mesh": "collision/collision.obj",
+    "input_image": "input_image.png",
+    "physical_properties": "physical_properties.json",
+    "preview_gif": "preview.gif",
+    "urdf": "asset.urdf",
+    "visual_mesh": "visual/visual_mesh.obj"
+  },
+  "physical_profile": "textile",
+  "sample_id": "stage3_100k_qwen2_v1_bag_003074",
+  "schema_version": 1,
+  "source_cn": "背包布主体",
+  "source_sheet": "功能织物",
+  "validation": {
+    "mpm": "pass",
+    "urdf_import": "pass"
+  },
+  "variant_recipe": {
+    "colorway": "mustard_yellow",
+    "construction_detail": "reinforced_edge",
+    "design_variant": "wide rectangular two-handle body",
+    "material": "cotton textile",
+    "micro_detail_scale": "1.220",
+    "proportion": "compact",
+    "state": "lightly_compressed",
+    "surface": "smooth_satin",
+    "surface_orientation_degrees": "78",
+    "tone_shift": "+0.007",
+    "view": "left_3q"
+  },
+  "visual_archetype": "handled_soft_bag",
+  "visual_lod": {
+    "bounds": [
+      [
+        -0.1100560028293158,
+        -0.16,
+        0.0
+      ],
+      [
+        0.1100560028293158,
+        0.16,
+        0.18758319033936308
+      ]
+    ],
+    "export_faces": 465583,
+    "export_vertices": 321829,
+    "extent": [
+      0.2201120056586316,
+      0.32,
+      0.18758319033936308
+    ],
+    "input_faces": 465583,
+    "input_vertices": 321829,
+    "mode": "source_full",
+    "output_files": [
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0007_stage3_100k_qwen2_v1_bag_003074/visual/visual_mesh.obj",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0007_stage3_100k_qwen2_v1_bag_003074/visual/material_0.png",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0007_stage3_100k_qwen2_v1_bag_003074/visual/visual_mesh.obj.mtl"
+    ],
+    "scale_applied": 0.31965011747138233,
+    "source_mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_bag_003074/mesh/stage3_100k_qwen2_v1_bag_003074.glb",
+    "visual_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0007_stage3_100k_qwen2_v1_bag_003074/visual/visual_mesh.obj"
+  },
+  "visual_preflight": {
+    "mtl_files": [
+      "visual_mesh.obj.mtl"
+    ],
+    "mtl_files_exist": true,
+    "obj_exists": true,
+    "texture_files": [
+      "material_0.png"
+    ],
+    "texture_files_exist": true,
+    "uv_count": 321829
+  }
+}

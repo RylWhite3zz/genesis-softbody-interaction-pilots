@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "implementation_revision": "active_wrinkle_preload_v1",
+  "asset_count": 2,
+  "preload_distance_m": 0.025,
+  "probe_pass_count": 0,
+  "successful_video_count": 0,
+  "results": [
+    {
+      "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+      "object_type": "Inflatable Mattress",
+      "status": "failed_probe_all",
+      "preload_distance_m": 0.025,
+      "normal_best_probe": {
+        "passed": false,
+        "com_lift_delta_z_m": -0.003953690443304597,
+        "aabb_min_z_m": 0.05486369505524635,
+        "required_com_lift_m": 0.045,
+        "required_aabb_min_z_m": 0.063
+      },
+      "preload_best_probe": {
+        "passed": false,
+        "com_lift_delta_z_m": -0.0038465467781955698,
+        "aabb_min_z_m": 0.05464635044336319,
+        "required_com_lift_m": 0.045,
+        "required_aabb_min_z_m": 0.063
+      },
+      "preload_candidate": {
+        "grasp_center_m": [
+          0.5258479455282532,
+          -0.38130782933734286,
+          0.076
+        ],
+        "close_axis": "xy_45deg",
+        "close_axis_unit_xy": [
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "tangent_axis_unit_xy": [
+          0.7071067811865476,
+          -0.7071067811865475
+        ],
+        "wrist_yaw_deg": -45.0,
+        "local_width_m": 0.047538842354862526,
+        "commanded_close_width_m": 0.027538842354862526,
+        "requires_entry_compression": false,
+        "entry_interference_m": 0.0,
+        "patch_particle_count": 41,
+        "low_surface_support_count": 12,
+        "high_surface_support_count": 10,
+        "patch_tangent_center_m": 0.641456,
+        "patch_z_center_m": 0.076,
+        "grasp_type": "edge",
+        "edge_fraction": 0.9812632667912875,
+        "corner_fraction": 0.4347279924121418,
+        "score": 11.844814283939947,
+        "rank": 2
+      },
+      "execution_grasp_center_m": [
+        0.5081702759985895,
+        -0.36363015980767915,
+        0.076
+      ]
+    },
+    {
+      "asset_id": "0090_stage3_100k_qwen2_v1_shell_020115",
+      "object_type": "Steam Mop Pad",
+      "status": "failed_probe_all",
+      "preload_distance_m": 0.025,
+      "normal_best_probe": {
+        "passed": false,
+        "com_lift_delta_z_m": -0.0014382029079473974,
+        "aabb_min_z_m": 0.056109461933374405,
+        "required_com_lift_m": 0.045,
+        "required_aabb_min_z_m": 0.063
+      },
+      "preload_best_probe": {
+        "passed": false,
+        "com_lift_delta_z_m": -0.0007446137909705858,
+        "aabb_min_z_m": 0.057422567158937454,
+        "required_com_lift_m": 0.045,
+        "required_aabb_min_z_m": 0.063
+      },
+      "preload_candidate": {
+        "grasp_center_m": [
+          0.609822,
+          -0.2479609027504921,
+          0.093352
+        ],
+        "close_axis": "xy_90deg",
+        "close_axis_unit_xy": [
+          -0.0,
+          1.0
+        ],
+        "tangent_axis_unit_xy": [
+          1.0,
+          0.0
+        ],
+        "wrist_yaw_deg": 0.0,
+        "local_width_m": 0.07834737002849579,
+        "commanded_close_width_m": 0.04,
+        "requires_entry_compression": true,
+        "entry_interference_m": 0.012347370028495785,
+        "patch_particle_count": 170,
+        "low_surface_support_count": 12,
+        "high_surface_support_count": 10,
+        "patch_tangent_center_m": 0.609822,
+        "patch_z_center_m": 0.093352,
+        "grasp_type": "edge",
+        "edge_fraction": 0.8755245264299644,
+        "corner_fraction": 0.09523649428636531,
+        "score": 20.672831256333318,
+        "rank": 1
+      },
+      "execution_grasp_center_m": [
+        0.584822,
+        -0.2479609027504921,
+        0.093352
+      ]
+    }
+  ]
+}

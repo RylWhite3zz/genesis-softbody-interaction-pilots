@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "implementation_revision": "planar_transport_v8_diagonal_edge_drag",
+  "scope": {
+    "asset_count_dynamics": 2,
+    "asset_ids_dynamics": [
+      "0001_stage3_100k_qwen2_v1_solid_053842",
+      "0079_stage3_100k_qwen2_v1_shell_025403"
+    ],
+    "asset_count_reachability": 3,
+    "asset_ids_reachability": [
+      "0001_stage3_100k_qwen2_v1_solid_053842",
+      "0074_stage3_100k_qwen2_v1_shell_016589",
+      "0079_stage3_100k_qwen2_v1_shell_025403"
+    ],
+    "original_scale_only": true,
+    "solver": "MPM.Elastic",
+    "genesis": "official 1.1.2 environment",
+    "goal_region_size_xy_m": [
+      0.4,
+      0.4
+    ],
+    "goal_region_visual_only": true
+  },
+  "dynamics_primary_count": 7,
+  "dynamics_status_counts": {
+    "failed_gates": 6,
+    "success": 1
+  },
+  "dynamics_robot_action_status_counts": {
+    "franka:edge_drag:failed_gates": 1,
+    "franka:press_drag:failed_gates": 2,
+    "franka:push:failed_gates": 1,
+    "piper:press_drag:failed_gates": 1,
+    "piper:push:failed_gates": 1,
+    "piper:push:success": 1
+  },
+  "successful_video_count": 1,
+  "successful_videos": [
+    "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/planar_transport_pilot/videos/piper_push_0079.mp4"
+  ],
+  "reachability": {
+    "piper": {
+      "revision": "planar_transport_v2_lateral_push",
+      "case_count": 6,
+      "valid_case_count": 4,
+      "cases": [
+        {
+          "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+          "action": "push",
+          "valid": true,
+          "max_position_error_m": 0.00036392437162674783,
+          "max_rotation_error_rad": 0.00013300147017966226,
+          "selected_yaw_deg": 0.0
+        },
+        {
+          "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+          "action": "press_drag",
+          "valid": false,
+          "max_position_error_m": 0.060527864787173445,
+          "max_rotation_error_rad": 0.015411229805410544,
+          "selected_yaw_deg": 0.0
+        },
+        {
+          "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+          "action": "push",
+          "valid": true,
+          "max_position_error_m": 0.00034272323741400086,
+          "max_rotation_error_rad": 0.0003039921454898613,
+          "selected_yaw_deg": 0.0
+        },
+        {
+          "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+          "action": "press_drag",
+          "valid": true,
+          "max_position_error_m": 0.0006631154013246613,
+          "max_rotation_error_rad": 0.00013172643643159443,
+          "selected_yaw_deg": 0.0
+        },
+        {
+          "asset_id": "0074_stage3_100k_qwen2_v1_shell_016589",
+          "action": "push",
+          "valid": true,
+          "max_position_error_m": 0.0005591734316364934,
+          "max_rotation_error_rad": 0.000123644743158237,
+          "selected_yaw_deg": 0.0
+        },
+        {
+          "asset_id": "0074_stage3_100k_qwen2_v1_shell_016589",
+          "action": "press_drag",
+          "valid": false,
+          "max_position_error_m": 0.07794881269091215,
+          "max_rotation_error_rad": 0.016757741572163504,
+          "selected_yaw_deg": 0.0
+        }
+      ]
+    },
+    "franka": {
+      "revision": "planar_transport_v2_lateral_push",
+      "case_count": 6,
+      "valid_case_count": 6,
+      "cases": [
+        {
+          "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+          "action": "push",
+          "valid": true,
+          "max_position_error_m": 0.000636607056590696,
+          "max_rotation_error_rad": 0.0004312968978368664,
+          "selected_yaw_deg": 0.0
+        },
+        {
+          "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+          "action": "press_drag",
+          "valid": true,
+          "max_position_error_m": 0.0003863974707025317,
+          "max_rotation_error_rad": 8.886768243812443e-05,
+          "selected_yaw_deg": 180.0
+        },
+        {
+          "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+          "action": "push",
+          "valid": true,
+          "max_position_error_m": 0.0006568026796408174,
+          "max_rotation_error_rad": 0.0003709130075383719,
+          "selected_yaw_deg": 0.0
+        },
+        {
+          "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+          "action": "press_drag",
+          "valid": true,
+          "max_position_error_m": 0.0003211601390499017,
+          "max_rotation_error_rad": 0.0001171581826107367,
+          "selected_yaw_deg": 0.0
+        },
+        {
+          "asset_id": "0074_stage3_100k_qwen2_v1_shell_016589",
+          "action": "push",
+          "valid": true,
+          "max_position_error_m": 0.0006314646704495893,
+          "max_rotation_error_rad": 0.0005516440851164051,
+          "selected_yaw_deg": 0.0
+        },
+        {
+          "asset_id": "0074_stage3_100k_qwen2_v1_shell_016589",
+          "action": "press_drag",
+          "valid": true,
+          "max_position_error_m": 0.0005389949561404001,
+          "max_rotation_error_rad": 0.00019951790171358688,
+          "selected_yaw_deg": 0.0
+        }
+      ]
+    }
+  },
+  "primary_trials": [
+    {
+      "result_file": "piper_push_0001.json",
+      "robot": "piper",
+      "action": "push",
+      "implementation_revision": "planar_transport_v4_wide_press_drag",
+      "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+      "object_type": "Chiffon Cake",
+      "geometry_family": "solid",
+      "status": "failed_gates",
+      "progress_m": 0.0794497372217549,
+      "goal_error_m": 0.17162256047795185,
+      "goal_particle_fraction": "",
+      "video": "",
+      "elapsed_seconds": 322.0010589826852
+    },
+    {
+      "result_file": "piper_push_0079.json",
+      "robot": "piper",
+      "action": "push",
+      "implementation_revision": "planar_transport_v5_region_occupancy",
+      "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+      "object_type": "Inflatable Mattress",
+      "geometry_family": "shell",
+      "status": "success",
+      "progress_m": 0.2349197512780043,
+      "goal_error_m": 0.033731638526118914,
+      "goal_particle_fraction": 0.9983733224888166,
+      "video": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/planar_transport_pilot/videos/piper_push_0079.mp4",
+      "elapsed_seconds": 183.9409359768033
+    },
+    {
+      "result_file": "piper_press_drag_0079.json",
+      "robot": "piper",
+      "action": "press_drag",
+      "implementation_revision": "planar_transport_v4_wide_press_drag",
+      "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+      "object_type": "Inflatable Mattress",
+      "geometry_family": "shell",
+      "status": "failed_gates",
+      "progress_m": 0.07911587703174672,
+      "goal_error_m": 0.16842115763279394,
+      "goal_particle_fraction": "",
+      "video": "",
+      "elapsed_seconds": 219.68281127512455
+    },
+    {
+      "result_file": "franka_push_0001.json",
+      "robot": "franka",
+      "action": "push",
+      "implementation_revision": "planar_transport_v8_diagonal_edge_drag",
+      "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+      "object_type": "Chiffon Cake",
+      "geometry_family": "solid",
+      "status": "failed_gates",
+      "progress_m": 0.03929036127060065,
+      "goal_error_m": 0.2118669839500762,
+      "goal_particle_fraction": 0.42632375189107413,
+      "video": "",
+      "elapsed_seconds": 303.0618260204792
+    },
+    {
+      "result_file": "franka_press_drag_0001.json",
+      "robot": "franka",
+      "action": "press_drag",
+      "implementation_revision": "planar_transport_v5_region_occupancy",
+      "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+      "object_type": "Chiffon Cake",
+      "geometry_family": "solid",
+      "status": "failed_gates",
+      "progress_m": 0.003304857195956634,
+      "goal_error_m": 0.2534805398332727,
+      "goal_particle_fraction": 0.34493192133131617,
+      "video": "",
+      "elapsed_seconds": 321.52109220437706
+    },
+    {
+      "result_file": "franka_press_drag_0079.json",
+      "robot": "franka",
+      "action": "press_drag",
+      "implementation_revision": "planar_transport_v5_region_occupancy",
+      "asset_id": "0079_stage3_100k_qwen2_v1_shell_025403",
+      "object_type": "Inflatable Mattress",
+      "geometry_family": "shell",
+      "status": "failed_gates",
+      "progress_m": 0.007291296212932008,
+      "goal_error_m": 0.24020656982970673,
+      "goal_particle_fraction": 0.2338348922326149,
+      "video": "",
+      "elapsed_seconds": 185.42890449799597
+    },
+    {
+      "result_file": "franka_edge_drag_0001.json",
+      "robot": "franka",
+      "action": "edge_drag",
+      "implementation_revision": "planar_transport_v8_diagonal_edge_drag",
+      "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+      "object_type": "Chiffon Cake",
+      "geometry_family": "solid",
+      "status": "failed_gates",
+      "progress_m": 0.03241874153603219,
+      "goal_error_m": 0.22436926290454137,
+      "goal_particle_fraction": 0.5452344931921331,
+      "video": "",
+      "elapsed_seconds": 339.0698838420212
+    }
+  ],
+  "iteration_controls": [
+    {
+      "result_file": "piper_press_drag_0079_v2_shallow.json",
+      "revision": "planar_transport_v2_lateral_push",
+      "robot": "piper",
+      "action": "press_drag",
+      "status": "failed_gates",
+      "progress_m": 0.0002868458380200778
+    },
+    {
+      "result_file": "piper_press_drag_0079_v3_contact.json",
+      "revision": "planar_transport_v3_contact_verified",
+      "robot": "piper",
+      "action": "press_drag",
+      "status": "failed_gates",
+      "progress_m": 0.033980044263220655
+    },
+    {
+      "result_file": "piper_push_0079_v4_aabb_gate.json",
+      "revision": "planar_transport_v4_wide_press_drag",
+      "robot": "piper",
+      "action": "push",
+      "status": "failed_gates",
+      "progress_m": 0.19597609594319926
+    }
+  ],
+  "planning_artifacts": [
+    {
+      "result_file": "piper_edge_drag_0001_plan.json",
+      "revision": "planar_transport_v6_far_edge_drag",
+      "robot": "piper",
+      "action": "edge_drag",
+      "status": "failed_ik",
+      "selected_candidate": null
+    },
+    {
+      "result_file": "franka_edge_drag_0001_plan.json",
+      "revision": "planar_transport_v8_diagonal_edge_drag",
+      "robot": "franka",
+      "action": "edge_drag",
+      "status": "plan_valid",
+      "selected_candidate": null
+    },
+    {
+      "result_file": "franka_edge_drag_0001_plan_v6_outer.json",
+      "revision": "planar_transport_v6_far_edge_drag",
+      "robot": "franka",
+      "action": "edge_drag",
+      "status": "failed_ik",
+      "selected_candidate": null
+    },
+    {
+      "result_file": "franka_edge_drag_0001_plan_v7_axial.json",
+      "revision": "planar_transport_v7_reachable_edge_drag",
+      "robot": "franka",
+      "action": "edge_drag",
+      "status": "no_far_edge_candidate",
+      "selected_candidate": null
+    }
+  ],
+  "trajectory_file_count": 0,
+  "dynamics_elapsed_seconds": [
+    322.0010589826852,
+    183.9409359768033,
+    219.68281127512455,
+    303.0618260204792,
+    321.52109220437706,
+    185.42890449799597,
+    339.0698838420212
+  ],
+  "elapsed_summary": {
+    "sum_seconds": 1874.7065127994865,
+    "median_seconds": 303.0618260204792
+  }
+}

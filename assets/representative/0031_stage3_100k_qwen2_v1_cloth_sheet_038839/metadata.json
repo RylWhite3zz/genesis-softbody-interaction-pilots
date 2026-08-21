@@ -1,0 +1,89 @@
+{
+  "canonical_id": "coated_textile__tarpaulin",
+  "caption": "A muted teal uniform coated field tarpaulin, made of coated polyester, with a smooth satin surface, shown in a three-quarter view.",
+  "geometry_family": "cloth_sheet",
+  "link_methods": {
+    "collision": "hardlink",
+    "input_image": "hardlink",
+    "mpm_report": "hardlink",
+    "preview_gif": "hardlink"
+  },
+  "material_family": "textile",
+  "object_type": "Tarpaulin",
+  "paths": {
+    "captions": "captions.json",
+    "collision_mesh": "collision/collision.obj",
+    "input_image": "input_image.png",
+    "physical_properties": "physical_properties.json",
+    "preview_gif": "preview.gif",
+    "urdf": "asset.urdf",
+    "visual_mesh": "visual/visual_mesh.obj"
+  },
+  "physical_profile": "textile",
+  "sample_id": "stage3_100k_qwen2_v1_cloth_sheet_038839",
+  "schema_version": 1,
+  "source_cn": "防水篷布",
+  "source_sheet": "功能织物",
+  "validation": {
+    "mpm": "pass",
+    "urdf_import": "pass"
+  },
+  "variant_recipe": {
+    "colorway": "muted_teal",
+    "construction_detail": "softly_folded_edge",
+    "design_variant": "uniform coated field",
+    "material": "coated polyester",
+    "micro_detail_scale": "1.134",
+    "proportion": "elongated",
+    "state": "gently_rounded",
+    "surface": "smooth_satin",
+    "surface_orientation_degrees": "64",
+    "tone_shift": "+0.052",
+    "view": "elevated_right_3q"
+  },
+  "visual_archetype": "coated_textile",
+  "visual_lod": {
+    "bounds": [
+      [
+        -0.16,
+        -0.10666666017773509,
+        0.0
+      ],
+      [
+        0.16,
+        0.10666666017773509,
+        0.007185169814528491
+      ]
+    ],
+    "export_faces": 5376,
+    "export_vertices": 2793,
+    "extent": [
+      0.32,
+      0.21333332035547017,
+      0.007185169814528491
+    ],
+    "input_faces": 5376,
+    "input_vertices": 2793,
+    "mode": "source_full",
+    "output_files": [
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0012_stage3_100k_qwen2_v1_cloth_sheet_038839/visual/visual_mesh.obj",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0012_stage3_100k_qwen2_v1_cloth_sheet_038839/visual/material_0.png",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0012_stage3_100k_qwen2_v1_cloth_sheet_038839/visual/visual_mesh.obj.mtl"
+    ],
+    "scale_applied": 0.21773241365705964,
+    "source_mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_cloth_sheet_038839/mesh/stage3_100k_qwen2_v1_cloth_sheet_038839.glb",
+    "visual_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0012_stage3_100k_qwen2_v1_cloth_sheet_038839/visual/visual_mesh.obj"
+  },
+  "visual_preflight": {
+    "mtl_files": [
+      "visual_mesh.obj.mtl"
+    ],
+    "mtl_files_exist": true,
+    "obj_exists": true,
+    "texture_files": [
+      "material_0.png"
+    ],
+    "texture_files_exist": true,
+    "uv_count": 2793
+  }
+}

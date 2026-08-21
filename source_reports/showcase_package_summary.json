@@ -1,0 +1,11 @@
+{
+  "assets_dir": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets",
+  "failure_count": 0,
+  "failures": [],
+  "includes_source_glb": false,
+  "packaged_count": 150,
+  "schema_version": 1,
+  "status": "pass",
+  "target_count": 150,
+  "visual_mode": "source-full"
+}

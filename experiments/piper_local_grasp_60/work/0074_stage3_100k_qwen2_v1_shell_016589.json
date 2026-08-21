@@ -1,0 +1,1023 @@
+{
+  "schema_version": 2,
+  "implementation_revision": "local_edge_corner_v6_deferred_place_ik",
+  "asset": {
+    "asset_id": "0074_stage3_100k_qwen2_v1_shell_016589",
+    "object_type": "Sofa Armrest Padding",
+    "canonical_id": "cushion_shell__sofa_armrest_padding",
+    "geometry_family": "shell",
+    "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0074_stage3_100k_qwen2_v1_shell_016589/collision/collision.obj",
+    "extent_m": [
+      0.32239361157340807,
+      0.2154263129908319,
+      0.1683032207459973
+    ],
+    "mass_kg": 1.0363520532984025,
+    "youngs_modulus_pa": 50000.0,
+    "poisson_ratio": 0.28,
+    "density_kg_m3": 180.0,
+    "particle_size_m": 0.009,
+    "grid_density_per_m": 128.0,
+    "source_dt_s": 0.0008,
+    "source_substeps": 24,
+    "estimated_particles": 7898,
+    "source_solver": "genesis_mpm_elastic"
+  },
+  "scale": 1.0,
+  "spawn_position_m": [
+    0.46994041230198924,
+    -0.23492178574177752,
+    0.060118322243152396
+  ],
+  "settled": {
+    "com_m": [
+      0.49836482647437846,
+      -0.21450231382117727,
+      0.13111998964401594
+    ],
+    "aabb_min_m": [
+      0.31361815333366394,
+      -0.33746251463890076,
+      0.062485430389642715
+    ],
+    "aabb_max_m": [
+      0.626273512840271,
+      -0.13154049217700958,
+      0.2197308987379074
+    ],
+    "speed_rms_m_s": 0.0037715120938838238,
+    "speed_max_m_s": 0.010178097620376567,
+    "active_count": 7884,
+    "finite": true
+  },
+  "candidate_count": 4,
+  "candidate_trials": [
+    {
+      "candidate": {
+        "grasp_center_m": [
+          0.336118,
+          -0.19250743091106415,
+          0.128529
+        ],
+        "close_axis": "xy_90deg",
+        "close_axis_unit_xy": [
+          -0.0,
+          1.0
+        ],
+        "tangent_axis_unit_xy": [
+          1.0,
+          0.0
+        ],
+        "wrist_yaw_deg": 0.0,
+        "local_width_m": 0.07259339094161987,
+        "commanded_close_width_m": 0.04,
+        "requires_entry_compression": true,
+        "entry_interference_m": 0.00659339094161987,
+        "patch_particle_count": 97,
+        "low_surface_support_count": 22,
+        "high_surface_support_count": 23,
+        "patch_tangent_center_m": 0.336118,
+        "patch_z_center_m": 0.128529,
+        "grasp_type": "edge",
+        "edge_fraction": 1.0,
+        "corner_fraction": 0.21362341576830216,
+        "score": 56.23144864128879,
+        "rank": 0
+      },
+      "motion_plan": {
+        "grasp_wrist_yaw_deg": 0.0
+      },
+      "ik": {
+        "approach": {
+          "target_grip_center_m": [
+            0.336118,
+            -0.19250743091106415,
+            0.20352900000000002
+          ],
+          "arm_q_rad": [
+            -0.9123624563217163,
+            1.6490325927734375,
+            -0.7157626748085022,
+            -1.132746696472168,
+            -1.044352650642395,
+            0.6508952975273132
+          ],
+          "position_error_norm_m": 0.0006123786659447263,
+          "rotation_error_norm_rad": 0.0018056158098307634
+        },
+        "descend": {
+          "target_grip_center_m": [
+            0.336118,
+            -0.19250743091106415,
+            0.128529
+          ],
+          "arm_q_rad": [
+            -0.911607027053833,
+            1.900585412979126,
+            -0.6331917643547058,
+            -0.9939306974411011,
+            -1.2079185247421265,
+            0.3308953642845154
+          ],
+          "position_error_norm_m": 0.0003396838156139933,
+          "rotation_error_norm_rad": 0.0029401915082557617
+        },
+        "probe_lift": {
+          "target_grip_center_m": [
+            0.336118,
+            -0.19250743091106415,
+            0.348529
+          ],
+          "arm_q_rad": [
+            -0.9108633399009705,
+            1.4146342277526855,
+            -1.103210687637329,
+            -1.5649158954620361,
+            -0.8993780612945557,
+            1.3905915021896362
+          ],
+          "position_error_norm_m": 9.995824215091864e-05,
+          "rotation_error_norm_rad": 4.193894739290977e-05
+        }
+      },
+      "grasp_ik_valid": true,
+      "place_ik_valid": null,
+      "phase_end": [
+        {
+          "stage": "approach",
+          "com_m": [
+            0.493373845318802,
+            -0.2154565005568397,
+            0.13004175643897312
+          ],
+          "aabb_min_m": [
+            0.2964465022087097,
+            -0.3384777307510376,
+            0.06056470796465874
+          ],
+          "aabb_max_m": [
+            0.625463604927063,
+            -0.13129538297653198,
+            0.22201582789421082
+          ],
+          "speed_rms_m_s": 0.3245444946195166,
+          "speed_max_m_s": 0.6833756971874698,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.06566355377435684,
+          "actual_pad_centroid_m": [
+            0.379304975271225,
+            -0.19766772910952568,
+            0.22415131330490112
+          ],
+          "actual_far_pad_centroid_m": [
+            0.3644231706857681,
+            -0.1966244950890541,
+            0.22571448236703873
+          ],
+          "actual_close_axis_unit_xyz": [
+            0.0607686298793796,
+            0.9945101516474425,
+            -0.08518645369284994
+          ],
+          "planned_close_axis_alignment_abs": 0.9945101516474425,
+          "target_grip_center_error_m": 0.036198460365799295
+        },
+        {
+          "stage": "descend",
+          "com_m": [
+            0.5034548918769058,
+            -0.19482379630189114,
+            0.12811676304284644
+          ],
+          "aabb_min_m": [
+            0.283723384141922,
+            -0.31598159670829773,
+            0.06087964028120041
+          ],
+          "aabb_max_m": [
+            0.6521456837654114,
+            -0.09080753475427628,
+            0.22018682956695557
+          ],
+          "speed_rms_m_s": 0.05809370494544218,
+          "speed_max_m_s": 0.25242281610188017,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.07117747142910957,
+          "actual_pad_centroid_m": [
+            0.3518191874027252,
+            -0.1927686147391796,
+            0.13660269975662231
+          ],
+          "actual_far_pad_centroid_m": [
+            0.33692605793476105,
+            -0.19282979518175125,
+            0.13838904350996017
+          ],
+          "actual_close_axis_unit_xyz": [
+            -0.004092577413650344,
+            0.999991616807239,
+            0.00013086388919472707
+          ],
+          "planned_close_axis_alignment_abs": 0.999991616807239,
+          "target_grip_center_error_m": 0.009898350083082211
+        },
+        {
+          "stage": "close",
+          "com_m": [
+            0.5058073176497254,
+            -0.19447564715278565,
+            0.12860478951398685
+          ],
+          "aabb_min_m": [
+            0.2829001545906067,
+            -0.3151721954345703,
+            0.06095694378018379
+          ],
+          "aabb_max_m": [
+            0.6532561779022217,
+            -0.08997327834367752,
+            0.22024689614772797
+          ],
+          "speed_rms_m_s": 0.006038009318842578,
+          "speed_max_m_s": 0.029861418773317522,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.07087811827659607,
+          "actual_pad_centroid_m": [
+            0.3508724570274353,
+            -0.19216343015432358,
+            0.1278921328485012
+          ],
+          "actual_far_pad_centroid_m": [
+            0.33600053191185,
+            -0.19218260794878006,
+            0.1298479661345482
+          ],
+          "actual_close_axis_unit_xyz": [
+            -0.0009583484634698938,
+            0.9999963631400531,
+            0.002520967054418653
+          ],
+          "planned_close_axis_alignment_abs": 0.9999963631400531,
+          "target_grip_center_error_m": null
+        },
+        {
+          "stage": "grip_hold",
+          "com_m": [
+            0.506587278878459,
+            -0.1941962359205667,
+            0.12870303218175938
+          ],
+          "aabb_min_m": [
+            0.28290534019470215,
+            -0.31472334265708923,
+            0.06126987561583519
+          ],
+          "aabb_max_m": [
+            0.6537273526191711,
+            -0.08957354724407196,
+            0.2202739119529724
+          ],
+          "speed_rms_m_s": 0.003640746241432209,
+          "speed_max_m_s": 0.019621791203157997,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.07080386579036713,
+          "actual_pad_centroid_m": [
+            0.3508559614419937,
+            -0.1922379955649376,
+            0.1276434026658535
+          ],
+          "actual_far_pad_centroid_m": [
+            0.33598582446575165,
+            -0.1922525390982628,
+            0.12961285561323166
+          ],
+          "actual_close_axis_unit_xyz": [
+            -0.0006255022461953414,
+            0.9999962596180382,
+            0.0026626109128585476
+          ],
+          "planned_close_axis_alignment_abs": 0.9999962596180382,
+          "target_grip_center_error_m": null
+        },
+        {
+          "stage": "probe_lift",
+          "com_m": [
+            0.49535203529668304,
+            -0.18953179931320072,
+            0.13798250616984067
+          ],
+          "aabb_min_m": [
+            0.2681938111782074,
+            -0.30762892961502075,
+            0.06828287243843079
+          ],
+          "aabb_max_m": [
+            0.6376867890357971,
+            -0.0906098261475563,
+            0.22782480716705322
+          ],
+          "speed_rms_m_s": 0.294215876502774,
+          "speed_max_m_s": 0.741056204205865,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.0447495449334383,
+          "actual_pad_centroid_m": [
+            0.3524557426571846,
+            -0.1928141862154007,
+            0.3404172956943512
+          ],
+          "actual_far_pad_centroid_m": [
+            0.3375933915376663,
+            -0.192936010658741,
+            0.342441126704216
+          ],
+          "actual_close_axis_unit_xyz": [
+            -0.00802423705101252,
+            0.9999670026402231,
+            0.0012669847975282928
+          ],
+          "planned_close_axis_alignment_abs": 0.9999670026402231,
+          "target_grip_center_error_m": 0.006278746853875848
+        },
+        {
+          "stage": "probe_hold",
+          "com_m": [
+            0.47925199203491814,
+            -0.19118084384762563,
+            0.12972952688763978
+          ],
+          "aabb_min_m": [
+            0.25380873680114746,
+            -0.3135712742805481,
+            0.062069542706012726
+          ],
+          "aabb_max_m": [
+            0.6192571520805359,
+            -0.0957685261964798,
+            0.2199866771697998
+          ],
+          "speed_rms_m_s": 0.03065410192073491,
+          "speed_max_m_s": 0.16657951892907252,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.04062851518392563,
+          "actual_pad_centroid_m": [
+            0.3509846702218056,
+            -0.1925179921090603,
+            0.3463868498802185
+          ],
+          "actual_far_pad_centroid_m": [
+            0.33611948788166046,
+            -0.19251830875873566,
+            0.34839342534542084
+          ],
+          "actual_close_axis_unit_xyz": [
+            -2.6779200244116613e-05,
+            0.9999999990866355,
+            -3.33107124987792e-05
+          ],
+          "planned_close_axis_alignment_abs": 0.9999999990866355,
+          "target_grip_center_error_m": null
+        }
+      ],
+      "probe": {
+        "passed": false,
+        "com_lift_delta_z_m": -0.0013904627563761651,
+        "aabb_min_z_m": 0.062069542706012726,
+        "required_com_lift_m": 0.045,
+        "required_aabb_min_z_m": 0.063
+      },
+      "assessment": null,
+      "elapsed_seconds": 296.45822308026254,
+      "status": "failed_probe"
+    },
+    {
+      "candidate": {
+        "grasp_center_m": [
+          0.336118,
+          -0.19033781439065933,
+          0.076
+        ],
+        "close_axis": "xy_90deg",
+        "close_axis_unit_xy": [
+          -0.0,
+          1.0
+        ],
+        "tangent_axis_unit_xy": [
+          1.0,
+          0.0
+        ],
+        "wrist_yaw_deg": 0.0,
+        "local_width_m": 0.0683891624212265,
+        "commanded_close_width_m": 0.04,
+        "requires_entry_compression": true,
+        "entry_interference_m": 0.0023891624212264984,
+        "patch_particle_count": 101,
+        "low_surface_support_count": 19,
+        "high_surface_support_count": 24,
+        "patch_tangent_center_m": 0.336118,
+        "patch_z_center_m": 0.076,
+        "grasp_type": "edge",
+        "edge_fraction": 1.0,
+        "corner_fraction": 0.2346956303324956,
+        "score": 51.335343200189286,
+        "rank": 1
+      },
+      "motion_plan": {
+        "grasp_wrist_yaw_deg": 0.0
+      },
+      "ik": {
+        "approach": {
+          "target_grip_center_m": [
+            0.336118,
+            -0.19033781439065933,
+            0.151
+          ],
+          "arm_q_rad": [
+            -0.9058532118797302,
+            1.8131452798843384,
+            -0.6410216093063354,
+            -1.0207620859146118,
+            -1.1549546718597412,
+            0.4134315252304077
+          ],
+          "position_error_norm_m": 0.00019229717871702704,
+          "rotation_error_norm_rad": 5.091860176467489e-05
+        },
+        "descend": {
+          "target_grip_center_m": [
+            0.336118,
+            -0.19033781439065933,
+            0.076
+          ],
+          "arm_q_rad": [
+            -0.9101622104644775,
+            2.109706401824951,
+            -0.6176875829696655,
+            -0.9349486827850342,
+            -1.221730351448059,
+            0.1346011459827423
+          ],
+          "position_error_norm_m": 0.026714160448457865,
+          "rotation_error_norm_rad": 0.11442089177420627
+        },
+        "probe_lift": {
+          "target_grip_center_m": [
+            0.336118,
+            -0.19033781439065933,
+            0.296
+          ],
+          "arm_q_rad": [
+            -0.9052894711494446,
+            1.454616904258728,
+            -0.9277077317237854,
+            -1.3938707113265991,
+            -0.913889467716217,
+            1.1171362400054932
+          ],
+          "position_error_norm_m": 0.00011633214005342477,
+          "rotation_error_norm_rad": 4.766895173429353e-05
+        }
+      },
+      "grasp_ik_valid": false,
+      "place_ik_valid": null,
+      "phase_end": [],
+      "probe": null,
+      "assessment": null,
+      "elapsed_seconds": 0.6366430539637804,
+      "status": "failed_grasp_ik"
+    },
+    {
+      "candidate": {
+        "grasp_center_m": [
+          0.332368,
+          -0.17059102654457092,
+          0.185137
+        ],
+        "close_axis": "xy_90deg",
+        "close_axis_unit_xy": [
+          -0.0,
+          1.0
+        ],
+        "tangent_axis_unit_xy": [
+          1.0,
+          0.0
+        ],
+        "wrist_yaw_deg": 0.0,
+        "local_width_m": 0.07673779129981995,
+        "commanded_close_width_m": 0.04,
+        "requires_entry_compression": true,
+        "entry_interference_m": 0.010737791299819943,
+        "patch_particle_count": 108,
+        "low_surface_support_count": 18,
+        "high_surface_support_count": 25,
+        "patch_tangent_center_m": 0.332368,
+        "patch_z_center_m": 0.185137,
+        "grasp_type": "edge",
+        "edge_fraction": 1.0,
+        "corner_fraction": 0.42648461540564714,
+        "score": 46.84362218116465,
+        "rank": 2
+      },
+      "motion_plan": {
+        "grasp_wrist_yaw_deg": 0.0
+      },
+      "ik": {
+        "approach": {
+          "target_grip_center_m": [
+            0.332368,
+            -0.17059102654457092,
+            0.260137
+          ],
+          "arm_q_rad": [
+            -0.8642808198928833,
+            1.4504854679107666,
+            -0.7662884593009949,
+            -1.249208688735962,
+            -0.9180395007133484,
+            0.9135785698890686
+          ],
+          "position_error_norm_m": 0.00017826052800695702,
+          "rotation_error_norm_rad": 0.00022152530624917983
+        },
+        "descend": {
+          "target_grip_center_m": [
+            0.332368,
+            -0.17059102654457092,
+            0.185137
+          ],
+          "arm_q_rad": [
+            -0.8646483421325684,
+            1.6478110551834106,
+            -0.6124347448348999,
+            -1.0383967161178589,
+            -1.0658048391342163,
+            0.5318368077278137
+          ],
+          "position_error_norm_m": 0.00029386749357338763,
+          "rotation_error_norm_rad": 0.00010639322590363802
+        },
+        "probe_lift": {
+          "target_grip_center_m": [
+            0.332368,
+            -0.17059102654457092,
+            0.40513699999999997
+          ],
+          "arm_q_rad": [
+            -0.8644612431526184,
+            1.3420872688293457,
+            -1.2593753337860107,
+            -1.7453291416168213,
+            -0.8728058934211731,
+            1.6886956691741943
+          ],
+          "position_error_norm_m": 0.00045239973386260337,
+          "rotation_error_norm_rad": 0.004062542324721605
+        }
+      },
+      "grasp_ik_valid": true,
+      "place_ik_valid": null,
+      "phase_end": [
+        {
+          "stage": "approach",
+          "com_m": [
+            0.4983605773829374,
+            -0.21439049737683896,
+            0.1310601894597734
+          ],
+          "aabb_min_m": [
+            0.31366029381752014,
+            -0.33744898438453674,
+            0.062357280403375626
+          ],
+          "aabb_max_m": [
+            0.6262425184249878,
+            -0.13131281733512878,
+            0.21962064504623413
+          ],
+          "speed_rms_m_s": 0.0007383452208397253,
+          "speed_max_m_s": 0.0023769298530731116,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.06610871106386185,
+          "actual_pad_centroid_m": [
+            0.3728814572095871,
+            -0.17464779317378998,
+            0.28222620487213135
+          ],
+          "actual_far_pad_centroid_m": [
+            0.357952818274498,
+            -0.17371558398008347,
+            0.2833516299724579
+          ],
+          "actual_close_axis_unit_xyz": [
+            0.05705879471815483,
+            0.9960414939904251,
+            -0.06815890400111708
+          ],
+          "planned_close_axis_alignment_abs": 0.9960414939904251,
+          "target_grip_center_error_m": 0.034688107905520627
+        },
+        {
+          "stage": "descend",
+          "com_m": [
+            0.49806393598660426,
+            -0.21354801440824112,
+            0.13046053415452585
+          ],
+          "aabb_min_m": [
+            0.3129969835281372,
+            -0.33719924092292786,
+            0.06180960312485695
+          ],
+          "aabb_max_m": [
+            0.6260064244270325,
+            -0.12662717700004578,
+            0.21896378695964813
+          ],
+          "speed_rms_m_s": 0.022365322658395574,
+          "speed_max_m_s": 0.09750258384853824,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.07030002027750015,
+          "actual_pad_centroid_m": [
+            0.34787536412477493,
+            -0.170468557626009,
+            0.18918632715940475
+          ],
+          "actual_far_pad_centroid_m": [
+            0.33300647139549255,
+            -0.1705290898680687,
+            0.1911642774939537
+          ],
+          "actual_close_axis_unit_xyz": [
+            -0.0038367007344970614,
+            0.9999910857283344,
+            0.0017630063360653146
+          ],
+          "planned_close_axis_alignment_abs": 0.9999910857283344,
+          "target_grip_center_error_m": 0.006061316347451208
+        },
+        {
+          "stage": "close",
+          "com_m": [
+            0.49812627311196805,
+            -0.21345843431619688,
+            0.13073807115747368
+          ],
+          "aabb_min_m": [
+            0.31318122148513794,
+            -0.3371546268463135,
+            0.061959002166986465
+          ],
+          "aabb_max_m": [
+            0.6260778307914734,
+            -0.1258123368024826,
+            0.21913102269172668
+          ],
+          "speed_rms_m_s": 0.010213424695741624,
+          "speed_max_m_s": 0.03438930251368355,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.06677362695336342,
+          "actual_pad_centroid_m": [
+            0.34730951488018036,
+            -0.17063354700803757,
+            0.18407321348786354
+          ],
+          "actual_far_pad_centroid_m": [
+            0.33244018256664276,
+            -0.17064061015844345,
+            0.18604880571365356
+          ],
+          "actual_close_axis_unit_xyz": [
+            -0.0005094831775895907,
+            0.9999998369686286,
+            -0.00025785578914681
+          ],
+          "planned_close_axis_alignment_abs": 0.9999998369686286,
+          "target_grip_center_error_m": null
+        },
+        {
+          "stage": "grip_hold",
+          "com_m": [
+            0.49821994525490526,
+            -0.21347699391847938,
+            0.13087112007531296
+          ],
+          "aabb_min_m": [
+            0.31336215138435364,
+            -0.33721432089805603,
+            0.06202356144785881
+          ],
+          "aabb_max_m": [
+            0.626150906085968,
+            -0.12618672847747803,
+            0.21920540928840637
+          ],
+          "speed_rms_m_s": 0.0017061729978369673,
+          "speed_max_m_s": 0.00575356190940468,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.06454284861683846,
+          "actual_pad_centroid_m": [
+            0.347237303853035,
+            -0.1708797961473465,
+            0.18362527340650558
+          ],
+          "actual_far_pad_centroid_m": [
+            0.3323711007833481,
+            -0.1708780750632286,
+            0.18562427163124084
+          ],
+          "actual_close_axis_unit_xyz": [
+            9.470871654690544e-05,
+            0.9999999826021073,
+            -0.00016070483576963594
+          ],
+          "planned_close_axis_alignment_abs": 0.9999999826021073,
+          "target_grip_center_error_m": null
+        },
+        {
+          "stage": "probe_lift",
+          "com_m": [
+            0.4938056369206737,
+            -0.21353649289617982,
+            0.1320128059789599
+          ],
+          "aabb_min_m": [
+            0.3081507384777069,
+            -0.33736473321914673,
+            0.06217014044523239
+          ],
+          "aabb_max_m": [
+            0.6239866614341736,
+            -0.1260051280260086,
+            0.21999791264533997
+          ],
+          "speed_rms_m_s": 0.06156940436162106,
+          "speed_max_m_s": 0.1506073207123554,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.040754882618784904,
+          "actual_pad_centroid_m": [
+            0.34886129200458527,
+            -0.17072175070643425,
+            0.39749106019735336
+          ],
+          "actual_far_pad_centroid_m": [
+            0.33399219810962677,
+            -0.17085720598697662,
+            0.39946378767490387
+          ],
+          "actual_close_axis_unit_xyz": [
+            -0.008806870986887323,
+            0.9999586156448651,
+            0.002281670665414266
+          ],
+          "planned_close_axis_alignment_abs": 0.9999586156448651,
+          "target_grip_center_error_m": 0.005907132052061888
+        },
+        {
+          "stage": "probe_hold",
+          "com_m": [
+            0.4930568353316918,
+            -0.21600506881290676,
+            0.13174590246136694
+          ],
+          "aabb_min_m": [
+            0.3070949614048004,
+            -0.33893218636512756,
+            0.06233791634440422
+          ],
+          "aabb_max_m": [
+            0.623836874961853,
+            -0.13043250143527985,
+            0.2203926146030426
+          ],
+          "speed_rms_m_s": 0.041616287872299415,
+          "speed_max_m_s": 0.14145025133846176,
+          "active_count": 7884,
+          "finite": true,
+          "actual_jaw_width_m": 0.04009983502328396,
+          "actual_pad_centroid_m": [
+            0.3472960516810417,
+            -0.1705966293811798,
+            0.4034183472394943
+          ],
+          "actual_far_pad_centroid_m": [
+            0.33242352306842804,
+            -0.17060207575559616,
+            0.40536975860595703
+          ],
+          "actual_close_axis_unit_xyz": [
+            -0.00016321952584282388,
+            0.9999987870815011,
+            0.0015489334760144906
+          ],
+          "planned_close_axis_alignment_abs": 0.9999987870815011,
+          "target_grip_center_error_m": null
+        }
+      ],
+      "probe": {
+        "passed": false,
+        "com_lift_delta_z_m": 0.0006259128173509987,
+        "aabb_min_z_m": 0.06233791634440422,
+        "required_com_lift_m": 0.045,
+        "required_aabb_min_z_m": 0.063
+      },
+      "assessment": null,
+      "elapsed_seconds": 194.80998356081545,
+      "status": "failed_probe"
+    },
+    {
+      "candidate": {
+        "grasp_center_m": [
+          0.32272768188529893,
+          -0.16438262332492753,
+          0.076
+        ],
+        "close_axis": "xy_45deg",
+        "close_axis_unit_xy": [
+          0.7071067811865475,
+          0.7071067811865476
+        ],
+        "tangent_axis_unit_xy": [
+          0.7071067811865476,
+          -0.7071067811865475
+        ],
+        "wrist_yaw_deg": -45.0,
+        "local_width_m": 0.04368173136653951,
+        "commanded_close_width_m": 0.02118173136653951,
+        "requires_entry_compression": false,
+        "entry_interference_m": 0.0,
+        "patch_particle_count": 44,
+        "low_surface_support_count": 14,
+        "high_surface_support_count": 13,
+        "patch_tangent_center_m": 0.344439,
+        "patch_z_center_m": 0.076,
+        "grasp_type": "corner",
+        "edge_fraction": 0.9051089778707877,
+        "corner_fraction": 0.659795247268854,
+        "score": 28.222076990949354,
+        "rank": 3
+      },
+      "motion_plan": {
+        "grasp_wrist_yaw_deg": -45.0
+      },
+      "ik": {
+        "approach": {
+          "target_grip_center_m": [
+            0.32272768188529893,
+            -0.16438262332492753,
+            0.151
+          ],
+          "arm_q_rad": [
+            -0.16681276261806488,
+            1.6960946321487427,
+            -0.44468528032302856,
+            0.6952263116836548,
+            -1.1125361919403076,
+            -0.25866633653640747
+          ],
+          "position_error_norm_m": 0.0006297552130999272,
+          "rotation_error_norm_rad": 0.00029598327009958255
+        },
+        "descend": {
+          "target_grip_center_m": [
+            0.32272768188529893,
+            -0.16438262332492753,
+            0.076
+          ],
+          "arm_q_rad": [
+            -0.1524304300546646,
+            2.0595834255218506,
+            -0.4062711298465729,
+            0.6334285140037537,
+            -1.221730351448059,
+            -0.0028551407158374786
+          ],
+          "position_error_norm_m": 0.04885345241662439,
+          "rotation_error_norm_rad": 0.21100302817738015
+        },
+        "probe_lift": {
+          "target_grip_center_m": [
+            0.32272768188529893,
+            -0.16438262332492753,
+            0.296
+          ],
+          "arm_q_rad": [
+            -0.16924819350242615,
+            1.2801573276519775,
+            -0.7657838463783264,
+            1.2140787839889526,
+            -0.657459557056427,
+            -1.0363539457321167
+          ],
+          "position_error_norm_m": 0.0005225642938363188,
+          "rotation_error_norm_rad": 0.0002054485206613679
+        }
+      },
+      "grasp_ik_valid": false,
+      "place_ik_valid": null,
+      "phase_end": [],
+      "probe": null,
+      "assessment": null,
+      "elapsed_seconds": 0.902017131447792,
+      "status": "failed_grasp_ik"
+    }
+  ],
+  "runtime": {
+    "backend": "backend.cuda",
+    "genesis_module": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/envs/genesis/lib/python3.10/site-packages/genesis/__init__.py",
+    "genesis_version": "1.1.2",
+    "cuda_device": "NVIDIA A800 80GB PCIe",
+    "write_isolation": {
+      "installed_source_read_only": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/envs/genesis/lib/python3.10/site-packages/genesis",
+      "runtime_source": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/piper_local_grasp_60/.cache/runs/0074_stage3_100k_qwen2_v1_shell_016589/genesis_runtime",
+      "pbs_binary": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/piper_local_grasp_60/.cache/runs/0074_stage3_100k_qwen2_v1_shell_016589/genesis_runtime/ext/VolumeSampling",
+      "temporary_directory": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/piper_local_grasp_60/.cache/runs/0074_stage3_100k_qwen2_v1_shell_016589/tmp"
+    },
+    "pad_center_calibration": {
+      "four_home_pad_centers_m": [
+        [
+          0.5063181519508362,
+          -0.03549995645880699,
+          0.36433160305023193
+        ],
+        [
+          0.47658801078796387,
+          -0.03549996018409729,
+          0.36834654211997986
+        ],
+        [
+          0.5063181519508362,
+          0.035500042140483856,
+          0.36433160305023193
+        ],
+        [
+          0.47658801078796387,
+          0.03550003468990326,
+          0.36834654211997986
+        ]
+      ],
+      "two_far_home_pad_centers_m": [
+        [
+          0.47658801078796387,
+          -0.03549996018409729,
+          0.36834654211997986
+        ],
+        [
+          0.47658801078796387,
+          0.03550003468990326,
+          0.36834654211997986
+        ]
+      ],
+      "calibrated_home_grip_center_m": [
+        0.47658801078796387,
+        3.725290298461914e-08,
+        0.36834654211997986
+      ],
+      "legacy_approximate_home_grip_center_m": [
+        0.4765879444,
+        0.0,
+        0.368346624
+      ],
+      "legacy_calibration_error_m": 1.1180106540182021e-07
+    }
+  },
+  "protocol": {
+    "dt_s": 0.0008,
+    "substeps": 24,
+    "stage_steps": {
+      "settle_clear": 437,
+      "approach": 350,
+      "descend": 475,
+      "close": 562,
+      "grip_hold": 225,
+      "probe_lift": 875,
+      "probe_hold": 300,
+      "transfer": 1312,
+      "lower_into_tray": 812,
+      "open": 437,
+      "retreat": 562,
+      "settle_in_tray": 812
+    },
+    "local_grasp_only": true,
+    "original_scale_only": true,
+    "robot_mpm_coupling_friction": 6.0,
+    "trajectory_recording": false,
+    "failed_video_retention": false
+  },
+  "video": null,
+  "status": "failed_probe_all",
+  "reason": "no candidate completed pick-place; candidate terminal statuses: ['failed_probe', 'failed_grasp_ik', 'failed_probe', 'failed_grasp_ik']",
+  "build_seconds": 91.0612566024065,
+  "torch_peak_allocated_bytes": 2176000,
+  "torch_peak_reserved_bytes": 4194304,
+  "elapsed_seconds": 627.3334308154881
+}

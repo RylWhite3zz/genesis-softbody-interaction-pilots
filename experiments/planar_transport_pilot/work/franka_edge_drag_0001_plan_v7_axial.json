@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "implementation_revision": "planar_transport_v7_reachable_edge_drag",
+  "asset": {
+    "asset_id": "0001_stage3_100k_qwen2_v1_solid_053842",
+    "object_type": "Chiffon Cake",
+    "canonical_id": "baked_soft_food__chiffon_cake",
+    "geometry_family": "solid",
+    "collision_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0001_stage3_100k_qwen2_v1_solid_053842/collision/collision.obj",
+    "extent_m": [
+      0.3222120373560089,
+      0.32315530652536417,
+      0.11637666847950591
+    ],
+    "mass_kg": 0.6633308345718362,
+    "youngs_modulus_pa": 65000.0,
+    "poisson_ratio": 0.36,
+    "density_kg_m3": 600.0,
+    "particle_size_m": 0.007,
+    "grid_density_per_m": 144.0,
+    "source_dt_s": 0.0007,
+    "source_substeps": 28,
+    "estimated_particles": 3223,
+    "source_solver": "genesis_mpm_elastic"
+  },
+  "robot": "franka",
+  "action": "edge_drag",
+  "scale": 1.0,
+  "spawn_position_m": [
+    0.6196802641422183,
+    -8.22551382384934e-05,
+    0.060852809525551395
+  ],
+  "settled_reference": {
+    "com_m": [
+      0.626785388593414,
+      -0.001155363513735678,
+      0.07658109600104832
+    ],
+    "aabb_min_m": [
+      0.44214528799057007,
+      -0.18992669880390167,
+      0.059005673974752426
+    ],
+    "aabb_max_m": [
+      0.8071901798248291,
+      0.18237711489200592,
+      0.10667820274829865
+    ],
+    "speed_rms_m_s": 0.04528535125386702,
+    "speed_max_m_s": 0.2887562877938559,
+    "active_count": 3305,
+    "finite": true
+  },
+  "tool_path": null,
+  "motion_plan": null,
+  "robot_geometry": {
+    "home_grip_center_m": [
+      0.3068905472755432,
+      -1.0374491488107651e-08,
+      0.4852822422981262
+    ],
+    "base_grip_offset_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "tool_vertical_offsets_m": [
+      -0.007248938083648682,
+      0.046468377113342285
+    ],
+    "open_width_m": 0.078,
+    "closed_width_m": 0.012,
+    "arm_dof_count": 7
+  },
+  "protocol": {
+    "original_scale_only": true,
+    "material": "MPM.Elastic",
+    "dt_s": 0.0007,
+    "substeps": 28,
+    "stage_steps": {
+      "settle_clear": 500,
+      "approach": 343,
+      "descend": 429,
+      "preload_hold": 257,
+      "close": 500,
+      "transport": 1857,
+      "transport_hold": 257,
+      "open": 357,
+      "retreat": 429,
+      "settle_goal": 929
+    },
+    "robot_mpm_coupling_friction": 6.0,
+    "colored_goal_region_size_xy_m": [
+      0.4,
+      0.4
+    ],
+    "trajectory_recording": false,
+    "failed_video_retention": false
+  },
+  "runtime": {
+    "backend": "backend.cuda",
+    "genesis_version": "1.1.2",
+    "genesis_module": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/envs/genesis/lib/python3.10/site-packages/genesis/__init__.py",
+    "cuda_device": "NVIDIA A800 80GB PCIe",
+    "build_seconds": 49.96548870950937,
+    "peak_cuda_bytes": 872960,
+    "write_isolation": {
+      "installed_source_read_only": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/envs/genesis/lib/python3.10/site-packages/genesis",
+      "runtime_source": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/planar_transport_pilot/.cache/runs/franka_edge_drag_0001_stage3_100k_qwen2_v1_solid_053842/genesis_runtime",
+      "pbs_binary": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/planar_transport_pilot/.cache/runs/franka_edge_drag_0001_stage3_100k_qwen2_v1_solid_053842/genesis_runtime/ext/VolumeSampling",
+      "temporary_directory": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/planar_transport_pilot/.cache/runs/franka_edge_drag_0001_stage3_100k_qwen2_v1_solid_053842/tmp"
+    }
+  },
+  "phase_end": [],
+  "assessment": null,
+  "video": null,
+  "diagnostic_images": {
+    "settled": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/wyf/planar_transport_pilot/diagnostics/franka_edge_drag_0001_stage3_100k_qwen2_v1_solid_053842_settled.png"
+  },
+  "status": "no_far_edge_candidate",
+  "plan_only": true,
+  "elapsed_seconds": 71.1114406362176
+}

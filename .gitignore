@@ -1,0 +1,8 @@
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+work_generated/
+videos_generated/
+*.partial.mp4

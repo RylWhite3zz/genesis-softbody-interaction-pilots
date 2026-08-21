@@ -1,0 +1,49 @@
+{
+  "mpm": {
+    "alpha_wrap_fraction": 0.02,
+    "alpha_wrap_offset_fraction": 0.004,
+    "density": 600.0,
+    "drop_height": 0.4,
+    "dt": 0.0007,
+    "grid_density": 144.0,
+    "particle_size": 0.007,
+    "poisson_ratio": 0.36,
+    "substeps": 28,
+    "youngs_modulus": 65000.0
+  },
+  "profile": "soft_food",
+  "rationale": "base:soft_food; geometry:solid; predeformed_state; baked_food_crumb",
+  "schema_version": 1,
+  "solver": "genesis_mpm_elastic",
+  "tuning_rules": [
+    "base:soft_food",
+    "geometry:solid",
+    "predeformed_state",
+    "baked_food_crumb"
+  ],
+  "urdf": {
+    "center": [
+      0.00031973585778163893,
+      8.22551382384934e-05,
+      0.05633552471420155
+    ],
+    "density": 600.0,
+    "extents": [
+      0.3222120373560089,
+      0.32315530652536417,
+      0.11637666847950591
+    ],
+    "inertia": {
+      "ixx": 0.006521254139846774,
+      "ixy": 0.0,
+      "ixz": 0.0,
+      "iyy": 0.0064876036364523715,
+      "iyz": 0.0,
+      "izz": 0.01151155104757872
+    },
+    "mass": 0.6633308345718362,
+    "raw_mass_from_density": 0.6633308345718362,
+    "volume": 0.0011055513909530603,
+    "watertight_collision": true
+  }
+}

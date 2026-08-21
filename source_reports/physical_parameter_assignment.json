@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "asset_count": 150,
+  "assignment_policy": "object rules over material profile over geometry family",
+  "by_family": {
+    "solid": {
+      "count": 30,
+      "youngs_modulus_range": [
+        31500.0,
+        150000.0
+      ],
+      "density_range": [
+        180.0,
+        1080.0
+      ],
+      "particle_size_values": [
+        0.007,
+        0.008,
+        0.009
+      ],
+      "drop_height_values": [
+        0.34,
+        0.4,
+        0.42,
+        0.44,
+        0.45,
+        0.46,
+        0.48
+      ]
+    },
+    "cloth_sheet": {
+      "count": 30,
+      "youngs_modulus_range": [
+        63000.0,
+        180000.0
+      ],
+      "density_range": [
+        180.0,
+        1050.0
+      ],
+      "particle_size_values": [
+        0.004
+      ],
+      "drop_height_values": [
+        0.3
+      ]
+    },
+    "shell": {
+      "count": 30,
+      "youngs_modulus_range": [
+        45000.0,
+        150000.0
+      ],
+      "density_range": [
+        180.0,
+        1080.0
+      ],
+      "particle_size_values": [
+        0.006,
+        0.008,
+        0.009
+      ],
+      "drop_height_values": [
+        0.4,
+        0.44,
+        0.46,
+        0.48,
+        0.52
+      ]
+    },
+    "garment": {
+      "count": 30,
+      "youngs_modulus_range": [
+        45000.0,
+        120000.0
+      ],
+      "density_range": [
+        180.0,
+        950.0
+      ],
+      "particle_size_values": [
+        0.006,
+        0.009
+      ],
+      "drop_height_values": [
+        0.36,
+        0.4,
+        0.48
+      ]
+    },
+    "bag": {
+      "count": 30,
+      "youngs_modulus_range": [
+        45000.0,
+        65000.0
+      ],
+      "density_range": [
+        180.0,
+        820.0
+      ],
+      "particle_size_values": [
+        0.006,
+        0.007,
+        0.008,
+        0.009
+      ],
+      "drop_height_values": [
+        0.34,
+        0.36,
+        0.4,
+        0.48,
+        0.52
+      ]
+    }
+  },
+  "by_profile": {
+    "foam": {
+      "count": 33,
+      "youngs_modulus_range": [
+        45000.0,
+        100000.0
+      ],
+      "density_range": [
+        180.0,
+        180.0
+      ],
+      "particle_size_values": [
+        0.004,
+        0.009
+      ],
+      "drop_height_values": [
+        0.3,
+        0.48
+      ]
+    },
+    "gel": {
+      "count": 3,
+      "youngs_modulus_range": [
+        31500.0,
+        63000.0
+      ],
+      "density_range": [
+        1000.0,
+        1000.0
+      ],
+      "particle_size_values": [
+        0.004,
+        0.007
+      ],
+      "drop_height_values": [
+        0.3,
+        0.4
+      ]
+    },
+    "generic": {
+      "count": 3,
+      "youngs_modulus_range": [
+        72000.0,
+        85000.0
+      ],
+      "density_range": [
+        720.0,
+        850.0
+      ],
+      "particle_size_values": [
+        0.008
+      ],
+      "drop_height_values": [
+        0.42,
+        0.45
+      ]
+    },
+    "paper": {
+      "count": 3,
+      "youngs_modulus_range": [
+        65000.0,
+        65000.0
+      ],
+      "density_range": [
+        420.0,
+        420.0
+      ],
+      "particle_size_values": [
+        0.007
+      ],
+      "drop_height_values": [
+        0.34
+      ]
+    },
+    "plastic": {
+      "count": 26,
+      "youngs_modulus_range": [
+        56700.0,
+        82600.0
+      ],
+      "density_range": [
+        533.0,
+        820.0
+      ],
+      "particle_size_values": [
+        0.008
+      ],
+      "drop_height_values": [
+        0.36,
+        0.52
+      ]
+    },
+    "rubber": {
+      "count": 4,
+      "youngs_modulus_range": [
+        120000.0,
+        180000.0
+      ],
+      "density_range": [
+        950.0,
+        1050.0
+      ],
+      "particle_size_values": [
+        0.004,
+        0.006,
+        0.008
+      ],
+      "drop_height_values": [
+        0.3,
+        0.36,
+        0.46
+      ]
+    },
+    "silicone": {
+      "count": 2,
+      "youngs_modulus_range": [
+        100000.0,
+        100000.0
+      ],
+      "density_range": [
+        1080.0,
+        1080.0
+      ],
+      "particle_size_values": [
+        0.008
+      ],
+      "drop_height_values": [
+        0.44
+      ]
+    },
+    "soft_food": {
+      "count": 16,
+      "youngs_modulus_range": [
+        35000.0,
+        70000.0
+      ],
+      "density_range": [
+        600.0,
+        1050.0
+      ],
+      "particle_size_values": [
+        0.007
+      ],
+      "drop_height_values": [
+        0.34,
+        0.4,
+        0.42
+      ]
+    },
+    "textile": {
+      "count": 60,
+      "youngs_modulus_range": [
+        48600.0,
+        120000.0
+      ],
+      "density_range": [
+        460.0,
+        460.0
+      ],
+      "particle_size_values": [
+        0.004,
+        0.006
+      ],
+      "drop_height_values": [
+        0.3,
+        0.4
+      ]
+    }
+  },
+  "object_specific_rule_counts": {
+    "predeformed_state": 38,
+    "baked_food_crumb": 6,
+    "compressible_fruit_flesh": 5,
+    "elastic_squeeze_toy": 1,
+    "yield_like_soft_mass": 1,
+    "inflatable_shell": 4,
+    "thin_latex_glove": 1,
+    "liquid_filled_medical_pouch_proxy": 3,
+    "paper_packaging": 3
+  },
+  "csv": "reports/physical_parameters.csv"
+}

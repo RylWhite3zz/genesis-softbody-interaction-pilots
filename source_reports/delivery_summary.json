@@ -1,0 +1,50 @@
+{
+  "asset_count": 150,
+  "by_geometry_family": {
+    "bag": 30,
+    "cloth_sheet": 30,
+    "garment": 30,
+    "shell": 30,
+    "solid": 30
+  },
+  "by_physical_profile": {
+    "foam": 33,
+    "gel": 3,
+    "generic": 3,
+    "paper": 3,
+    "plastic": 26,
+    "rubber": 4,
+    "silicone": 2,
+    "soft_food": 16,
+    "textile": 60
+  },
+  "delivery_folder_logical_bytes": 8769904662,
+  "entry_manifest": "manifests/delivery_manifest.jsonl",
+  "includes_source_glb": false,
+  "mass_range_kg": [
+    0.08,
+    4.5
+  ],
+  "preview_directories": [
+    "review_renders/urdf_final",
+    "review_renders/mesh_generation"
+  ],
+  "schema_version": 1,
+  "status": "pass",
+  "validation": {
+    "genesis_mpm_drop": {
+      "pass": 150,
+      "runtime_sec": 5080.19
+    },
+    "genesis_urdf_import": {
+      "pass": 150,
+      "runtime_sec": 671.974
+    }
+  },
+  "visual_faces_range": [
+    4608,
+    499935
+  ],
+  "visual_faces_total": 58299291,
+  "visual_mode": "source-full"
+}

@@ -1,0 +1,49 @@
+{
+  "mpm": {
+    "alpha_wrap_fraction": 0.022,
+    "alpha_wrap_offset_fraction": 0.004,
+    "density": 533.0,
+    "drop_height": 0.52,
+    "dt": 0.001,
+    "grid_density": 144.0,
+    "particle_size": 0.008,
+    "poisson_ratio": 0.4,
+    "substeps": 20,
+    "youngs_modulus": 74340.0
+  },
+  "profile": "plastic",
+  "rationale": "base:plastic; geometry:shell; inflatable_shell; predeformed_state",
+  "schema_version": 1,
+  "solver": "genesis_mpm_elastic",
+  "tuning_rules": [
+    "base:plastic",
+    "geometry:shell",
+    "inflatable_shell",
+    "predeformed_state"
+  ],
+  "urdf": {
+    "center": [
+      -2.8957088394447605e-05,
+      -0.00022613705307675258,
+      0.02554389611556625
+    ],
+    "density": 533.0,
+    "extents": [
+      0.1573266583957461,
+      0.3223679197105435,
+      0.053657782787559095
+    ],
+    "inertia": {
+      "ixx": 0.006020664267805763,
+      "ixy": 0.0,
+      "ixz": 0.0,
+      "iyy": 0.0015576368739171366,
+      "iyz": 0.0,
+      "izz": 0.007253686839501242
+    },
+    "mass": 0.6764776534006828,
+    "raw_mass_from_density": 0.6764776534006828,
+    "volume": 0.001269188843153251,
+    "watertight_collision": true
+  }
+}

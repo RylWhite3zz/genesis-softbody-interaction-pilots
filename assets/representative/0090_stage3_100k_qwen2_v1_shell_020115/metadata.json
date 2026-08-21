@@ -1,0 +1,89 @@
+{
+  "canonical_id": "padded_support__steam_mop_pad",
+  "caption": "A soft red cylindrical bolster steam mop pad, made of soft polyester, with a lightly textured surface, shown in a three-quarter view.",
+  "geometry_family": "shell",
+  "link_methods": {
+    "collision": "hardlink",
+    "input_image": "hardlink",
+    "mpm_report": "hardlink",
+    "preview_gif": "hardlink"
+  },
+  "material_family": "textile",
+  "object_type": "Steam Mop Pad",
+  "paths": {
+    "captions": "captions.json",
+    "collision_mesh": "collision/collision.obj",
+    "input_image": "input_image.png",
+    "physical_properties": "physical_properties.json",
+    "preview_gif": "preview.gif",
+    "urdf": "asset.urdf",
+    "visual_mesh": "visual/visual_mesh.obj"
+  },
+  "physical_profile": "textile",
+  "sample_id": "stage3_100k_qwen2_v1_shell_020115",
+  "schema_version": 1,
+  "source_cn": "蒸汽拖把垫",
+  "source_sheet": "家居织物",
+  "validation": {
+    "mpm": "pass",
+    "urdf_import": "pass"
+  },
+  "variant_recipe": {
+    "colorway": "soft_red",
+    "construction_detail": "subtle_edge_seam",
+    "design_variant": "cylindrical bolster",
+    "material": "soft polyester",
+    "micro_detail_scale": "1.324",
+    "proportion": "wide_shallow",
+    "state": "resting",
+    "surface": "lightly_textured",
+    "surface_orientation_degrees": "79",
+    "tone_shift": "+0.027",
+    "view": "elevated_left_3q"
+  },
+  "visual_archetype": "padded_support",
+  "visual_lod": {
+    "bounds": [
+      [
+        -0.16,
+        -0.030117553271376635,
+        0.0
+      ],
+      [
+        0.16,
+        0.030117553271376635,
+        0.16873247634656882
+      ]
+    ],
+    "export_faces": 492048,
+    "export_vertices": 404595,
+    "extent": [
+      0.32,
+      0.06023510654275327,
+      0.16873247634656882
+    ],
+    "input_faces": 492048,
+    "input_vertices": 404595,
+    "mode": "source_full",
+    "output_files": [
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0014_stage3_100k_qwen2_v1_shell_020115/visual/visual_mesh.obj",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0014_stage3_100k_qwen2_v1_shell_020115/visual/material_0.png",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0014_stage3_100k_qwen2_v1_shell_020115/visual/visual_mesh.obj.mtl"
+    ],
+    "scale_applied": 0.319586240486526,
+    "source_mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_020115/mesh/stage3_100k_qwen2_v1_shell_020115.glb",
+    "visual_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0014_stage3_100k_qwen2_v1_shell_020115/visual/visual_mesh.obj"
+  },
+  "visual_preflight": {
+    "mtl_files": [
+      "visual_mesh.obj.mtl"
+    ],
+    "mtl_files_exist": true,
+    "obj_exists": true,
+    "texture_files": [
+      "material_0.png"
+    ],
+    "texture_files_exist": true,
+    "uv_count": 404595
+  }
+}

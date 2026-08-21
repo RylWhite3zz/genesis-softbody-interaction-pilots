@@ -1,0 +1,30 @@
+{
+  "error": null,
+  "metrics": {
+    "entity_type": "RigidEntity",
+    "render_pixel_std": 23.094318389892578,
+    "visual_faces": 465583,
+    "visual_vertices": 321829
+  },
+  "references": {
+    "mesh_references": [
+      {
+        "exists": true,
+        "filename": "visual/visual_mesh.obj",
+        "path": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0121_stage3_100k_qwen2_v1_bag_003074/visual/visual_mesh.obj"
+      },
+      {
+        "exists": true,
+        "filename": "collision/collision.obj",
+        "path": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0121_stage3_100k_qwen2_v1_bag_003074/collision/collision.obj"
+      }
+    ],
+    "robot_name": "stage3_100k_qwen2_v1_bag_003074"
+  },
+  "runtime_sec": 31.528,
+  "schema_version": 1,
+  "screenshot": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0121_stage3_100k_qwen2_v1_bag_003074/validation/urdf_import.png",
+  "stage": "genesis_urdf_import",
+  "status": "pass",
+  "urdf": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0121_stage3_100k_qwen2_v1_bag_003074/asset.urdf"
+}

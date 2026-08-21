@@ -1,0 +1,89 @@
+{
+  "canonical_id": "inflatable_shell__inflatable_mattress",
+  "caption": "A mustard yellow ringed inflated support inflatable mattress, made of coated textile, with a fine matte surface, shown in a three-quarter view.",
+  "geometry_family": "shell",
+  "link_methods": {
+    "collision": "hardlink",
+    "input_image": "hardlink",
+    "mpm_report": "hardlink",
+    "preview_gif": "hardlink"
+  },
+  "material_family": "unknown",
+  "object_type": "Inflatable Mattress",
+  "paths": {
+    "captions": "captions.json",
+    "collision_mesh": "collision/collision.obj",
+    "input_image": "input_image.png",
+    "physical_properties": "physical_properties.json",
+    "preview_gif": "preview.gif",
+    "urdf": "asset.urdf",
+    "visual_mesh": "visual/visual_mesh.obj"
+  },
+  "physical_profile": "plastic",
+  "sample_id": "stage3_100k_qwen2_v1_shell_025403",
+  "schema_version": 1,
+  "source_cn": "充气床垫",
+  "source_sheet": "软支撑件",
+  "validation": {
+    "mpm": "pass",
+    "urdf_import": "pass"
+  },
+  "variant_recipe": {
+    "colorway": "mustard_yellow",
+    "construction_detail": "reinforced_edge",
+    "design_variant": "ringed inflated support",
+    "material": "coated textile",
+    "micro_detail_scale": "0.989",
+    "proportion": "wide_shallow",
+    "state": "lightly_compressed",
+    "surface": "fine_matte",
+    "surface_orientation_degrees": "4",
+    "tone_shift": "+0.109",
+    "view": "elevated_left_3q"
+  },
+  "visual_archetype": "inflatable_shell",
+  "visual_lod": {
+    "bounds": [
+      [
+        -0.07731321508768417,
+        -0.025470350466407925,
+        0.0
+      ],
+      [
+        0.07731321508768417,
+        0.025470350466407925,
+        0.32
+      ]
+    ],
+    "export_faces": 488488,
+    "export_vertices": 324264,
+    "extent": [
+      0.15462643017536834,
+      0.05094070093281585,
+      0.32
+    ],
+    "input_faces": 488488,
+    "input_vertices": 324264,
+    "mode": "source_full",
+    "output_files": [
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0003_stage3_100k_qwen2_v1_shell_025403/visual/visual_mesh.obj",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0003_stage3_100k_qwen2_v1_shell_025403/visual/material_0.png",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0003_stage3_100k_qwen2_v1_shell_025403/visual/visual_mesh.obj.mtl"
+    ],
+    "scale_applied": 0.3195885804795505,
+    "source_mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_shell_025403/mesh/stage3_100k_qwen2_v1_shell_025403.glb",
+    "visual_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0003_stage3_100k_qwen2_v1_shell_025403/visual/visual_mesh.obj"
+  },
+  "visual_preflight": {
+    "mtl_files": [
+      "visual_mesh.obj.mtl"
+    ],
+    "mtl_files_exist": true,
+    "obj_exists": true,
+    "texture_files": [
+      "material_0.png"
+    ],
+    "texture_files_exist": true,
+    "uv_count": 324264
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "canonical_id": "baked_soft_food__chiffon_cake",
+  "caption": "A muted teal hand-formed specimen chiffon cake, made of pastry surface, with a natural irregularity surface, shown in a three-quarter view.",
+  "geometry_family": "solid",
+  "link_methods": {
+    "collision": "hardlink",
+    "input_image": "hardlink",
+    "mpm_report": "hardlink",
+    "preview_gif": "hardlink"
+  },
+  "material_family": "soft_food",
+  "object_type": "Chiffon Cake",
+  "paths": {
+    "captions": "captions.json",
+    "collision_mesh": "collision/collision.obj",
+    "input_image": "input_image.png",
+    "physical_properties": "physical_properties.json",
+    "preview_gif": "preview.gif",
+    "urdf": "asset.urdf",
+    "visual_mesh": "visual/visual_mesh.obj"
+  },
+  "physical_profile": "soft_food",
+  "sample_id": "stage3_100k_qwen2_v1_solid_053842",
+  "schema_version": 1,
+  "source_cn": "戚风蛋糕",
+  "source_sheet": "烘焙类",
+  "validation": {
+    "mpm": "pass",
+    "urdf_import": "pass"
+  },
+  "variant_recipe": {
+    "colorway": "muted_teal",
+    "construction_detail": "reinforced_edge",
+    "design_variant": "hand-formed specimen",
+    "material": "pastry surface",
+    "micro_detail_scale": "1.389",
+    "proportion": "wide_shallow",
+    "state": "lightly_compressed",
+    "surface": "natural_irregularity",
+    "surface_orientation_degrees": "103",
+    "tone_shift": "+0.083",
+    "view": "left_3q"
+  },
+  "visual_archetype": "baked_soft_food",
+  "visual_lod": {
+    "bounds": [
+      [
+        -0.15976486027642167,
+        -0.0563309969592856,
+        0.0
+      ],
+      [
+        0.15976486027642167,
+        0.0563309969592856,
+        0.32
+      ]
+    ],
+    "export_faces": 461570,
+    "export_vertices": 306388,
+    "extent": [
+      0.31952972055284334,
+      0.1126619939185712,
+      0.32
+    ],
+    "input_faces": 461570,
+    "input_vertices": 306388,
+    "mode": "source_full",
+    "output_files": [
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0001_stage3_100k_qwen2_v1_solid_053842/visual/visual_mesh.obj",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0001_stage3_100k_qwen2_v1_solid_053842/visual/material_0.png",
+      "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0001_stage3_100k_qwen2_v1_solid_053842/visual/visual_mesh.obj.mtl"
+    ],
+    "scale_applied": 0.3212924976710418,
+    "source_mesh": "output/stage3_showcase_150_genesis_mpm_20260724/samples/stage3_100k_qwen2_v1_solid_053842/mesh/stage3_100k_qwen2_v1_solid_053842.glb",
+    "visual_mesh": "/mnt/nvme0n1/Tsinghua_Node10/iat2/zyh/output/stage3_showcase_150_genesis_mpm_20260724/assets/0001_stage3_100k_qwen2_v1_solid_053842/visual/visual_mesh.obj"
+  },
+  "visual_preflight": {
+    "mtl_files": [
+      "visual_mesh.obj.mtl"
+    ],
+    "mtl_files_exist": true,
+    "obj_exists": true,
+    "texture_files": [
+      "material_0.png"
+    ],
+    "texture_files_exist": true,
+    "uv_count": 306388
+  }
+}
